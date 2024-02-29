@@ -1,0 +1,24 @@
+# Notebook Entry - February 29, 2024
+
+## Objectives for Today's Session:
+Today's main goal was to advance my understanding and skills in designing a PCB for an ESP32 chip using KiCad software. Specifically, I aimed to learn how to incorporate various components into the PCB design, understand the use of LDOs for board protection, and adapt an existing design to fit the requirements of our smart insole project.
+
+## Record of What Was Done:
+During this session, I embarked on a comprehensive tutorial that spanned approximately 4 hours, dedicated to creating a custom PCB for an ESP32 S3 chip. This tutorial was instrumental in guiding me through the process of reading humidity levels using an ENS210 module and subsequently activating an RGB light based on the humidity readings. Given that the humidity sensor's functionality was not pertinent to our smart insole project, I modified the design to exclude this component.
+
+Throughout the tutorial, I acquired valuable skills and knowledge in several key areas:
+
+- **Importing Footprints and Components:** I learned the procedure for importing necessary footprints and components into KiCad, ensuring that each element of the PCB was accurately represented and correctly placed.
+- **Utilizing Data Sheets:** The tutorial emphasized the importance of referring to data sheets for detailed information on components, which facilitated the accurate inclusion of each part in the PCB design.
+- **Understanding and Implementing LDOs:** A significant portion of the tutorial was dedicated to Low Dropout Regulators (LDOs). I learned how LDOs are crucial for protecting the PCB by stabilizing voltage levels. Moreover, I gained insights into calculating thermal limits for LDOs, ensuring that the board operates within safe temperature ranges.
+
+### Diagrams, Figures, and Equations:
+
+![PCB Schematic](./PCB Schematic.png)
+
+The equation used for calculating the thermal limit was:
+ΔT = Pdiss x Rθja
+where Pdiss is the power dissipation and RθJA is the junction-to-ambient thermal resistance.
+
+## Conclusion:
+Today's session was highly productive, significantly advancing my proficiency in PCB design for the ESP32 chip using KiCad. By following the detailed tutorial, I not only adapted an existing design for our project's needs but also deepened my understanding of crucial components and calculations needed for a successful PCB design. Moving forward, I will continue to refine the design and explore additional functionalities that could enhance the smart insole project.

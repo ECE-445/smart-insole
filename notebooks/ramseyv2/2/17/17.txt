@@ -1,0 +1,32 @@
+### Notebook Entry - Febuary 17th
+
+#### Objectives:
+- Illustrate the wiring diagram and the physical design for clarity and implementation guidance.
+- Outline the electronic principle of the voltage divider applied to the pressure sensors.
+- Create diagrams for physical design of smart insole system
+- Create a blow up of the Controler device and lable what function it will preform
+- Update the design document with the new diagrams and technical explanations.
+
+#### Session Record:
+
+1. **Diagrams Created and Integrated:**
+   - Completed a wiring diagram for the pressure sensors within the insole, highlighting the use of a voltage divider circuit to measure variations in pressure .
+   - Developed a visual representation of the physical design of the smart insole, detailing the placement of pressure sensors, wiring, and connectivity to the external sensor box.
+   - Illustrated a detailed view of the external sensor box, indicating the functions of various buttons, LEDs, and the USB-C charging port.
+
+2. **Technical Concept Elaborated:**
+   - Explained the electrical concept of a voltage divider in the context of pressure sensors. As the resistance of a pressure sensor increases with applied pressure, the voltage across it changes. This change in voltage is used as an analog signal representing pressure levels.
+   - Elaborated on how this principle is key to the function of our smart insoles, allowing for accurate pressure readings which are then transmitted to a web interface via Bluetooth.
+
+3. **Design Document Update:**
+   - Added the new diagrams to our design document
+   - Included annotations in the diagrams for better understanding and implementation.
+
+#### Diagrams and Figures:
+- **Pressure Sensor Wiring Diagram:** A schematic showing the arrangement of resistors and connections to the microcontroller to form a voltage divider network.
+- **Physical Design Illustration:** A graphical layout of the insole, displaying sensor positions, wiring paths, and connectivity to external components.
+- **External Sensor Box Design:** A blow-up view of the external sensor box with labeled buttons and ports.
+
+#### Equations:
+- Voltage Divider Equation: V_out = V_in * (R2 / (R1 + R2))
+  - Where V_out is the voltage across the pressure sensor (R2), V_in is the input voltage, R1 is the fixed resistor, and R2 is the variable resistor (pressure sensor).

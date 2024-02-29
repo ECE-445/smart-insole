@@ -1,0 +1,49 @@
+# Notebook Entry
+
+## Date: January 29th
+
+### Brief Statement of Objectives for This Session:
+
+- To formulate a comprehensive project proposal outlining the development of an insertable insole with integrated sensors for hikers.
+- Identify the key components, objectives, and criteria for success of the project.
+- Discuss and define the technical specifications and functionalities of the proposed solution.
+
+### Record of What Was Done:
+
+#### Introduction to the Problem:
+
+- Recognized the need for a product that can deliver personalized feedback on foot stresses experienced by hikers to prevent injuries.
+- Identified factors contributing to injury risks: gait, fitness level, weight carried, terrain, etc.
+
+#### Solution Overview:
+
+- Proposed the development of an insertable insole equipped with pressure sensors, accelerometers, and gyroscopes to monitor foot dynamics during hikes.
+- Highlighted the importance of durable, comfortable materials and wireless connectivity for real-time feedback.
+
+#### Solution Components Detailed:
+
+- **Sensors:** Discussed the integration of accelerometers, gyroscopes, and pressure sensors to track foot movements and pressures. Provided examples of specific products for each component.
+- **Status LEDs:** Introduced the idea of using LEDs for visual status indicators such as power, Bluetooth connectivity, and sensor malfunction.
+- **User Interface:** Planned for a smartphone interface complemented by physical controls on the insole for data management and settings adjustments.
+- **Power:** Considered using a lithium-ion battery with a capacity of 200-300mAh to ensure sufficient power for extended hikes.
+
+#### Criterion for Success:
+
+- Defined success metrics including sensor accuracy, comfort and durability of the insole, effective data communication, on-device storage, battery life, and user interface usability.
+
+#### Additional Considerations:
+
+- Suggested potential for data analytics and the importance of professional interpretation of the data collected.
+
+#### Diagrams and Figures:
+
+- Included diagrams to represent the placement of sensors within the insole and the general architecture of the system.
+- Planned for figures illustrating example data visualizations such as heat maps of foot pressure.
+
+#### Equations:
+
+- Outlined the basic equations for converting sensor data (pressure changes, acceleration, and orientation) into meaningful metrics for analysis.
+
+### Conclusion:
+
+This session focused on drafting a detailed project proposal for a sensor-integrated hiking insole. The team outlined the problem, proposed a solution with specific components, and defined the success criteria for the project. The proposal includes considerations for sensor accuracy, user comfort, data communication, and power management, aiming to enhance the hiking experience and reduce injury risks.

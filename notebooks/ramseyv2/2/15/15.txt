@@ -1,0 +1,28 @@
+# Notebook Entry for Today's Session
+
+**Date:** February 15, 2024
+
+## Objectives for the Session:
+
+### Software Design Section for Smart Insole Project:
+- Detailed aspects of "Data Collection, Aggregation, and Transmission" and "Web Interface".
+
+## Record of Activities:
+
+### Data Collection, Aggregation, and Transmission:
+- Described the software flow, starting from Bluetooth pairing mode and transitioning into main operational phases.
+- The software records sensor data during hikes and writes this information to storage.
+- It sends data packets to a connected device via a web interface for real-time tracking or backup.
+
+### Web Interface:
+- Outlined the development of a web interface for offloading data from the ESP32 device.
+- Detailed the use of BLEServer, BLEService, and BLECharacteristic modules for Bluetooth services.
+- The interface will utilize the Web Bluetooth API for connecting to the ESP32, enabling data transfer and interaction with device services and characteristics.
+- Plans include displaying hiking statistics through charts and graphs using Next.js and various NPM modules.
+
+## Diagrams and Figures:
+- Flowcharts depicting the logic for data collection and transmission.
+- Architectural diagrams for the web interface setup and Bluetooth communication.
+
+## Conclusion:
+- Successfully documented the software design aspects of the Smart Insole project, focusing on efficient data handling and user interaction through a web interface.

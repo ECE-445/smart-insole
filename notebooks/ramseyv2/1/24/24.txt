@@ -1,0 +1,3 @@
+Wrote the folling web post for our chosen project
+
+Create an insole to track where as you hike you experience the most pounding. I'd use the same sort of idea as existing ski boot tackers but adjust it to hiking. Would use conductive sheet to measure where there is most pressure. Also could integrate accelerometer and other sensors to summarize a hike.

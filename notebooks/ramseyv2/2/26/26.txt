@@ -1,0 +1,29 @@
+# Notebook Entry: Design Document Presentation Feedback and Next Steps
+
+**Date:** February 26, 2024
+
+## Objectives:
+
+1. Present our Smart Insole design document to the project group.
+2. Gather feedback for further refinement and improvement.
+
+## Record of Session:
+
+Today, we presented our Smart Insole design document, covering the concept, physical and software design, power requirements, and safety considerations. The device, aimed at hikers to monitor foot pressure and movement, integrates pressure sensors, accelerometers, and gyroscopes for data collection, which is then transmitted to a smartphone app for analysis and feedback.
+
+## Feedback Received:
+
+- Incorporate thermal calculations to ensure device components operate within safe temperature limits.
+- Perform power draw calculations to accurately predict device longevity during use, considering the power consumption of sensors, microcontroller, and other components.
+
+## Actions Taken:
+
+- Reviewed the design document's sections on hardware design, focusing on the microcontroller, sensors, and power subsystem to identify areas lacking thermal and power draw considerations.
+- Discussed strategies for thermal analysis, including modeling component heat generation and dissipation.
+- Outlined a plan to calculate power consumption based on the operating voltage and current of each component, aiming to estimate battery life accurately.
+
+## Next Steps:
+
+1. Conduct thermal analysis for each critical component to ensure temperature remains within operational limits.
+2. Calculate total power consumption under typical usage scenarios to estimate battery life and identify potential improvements for energy efficiency.
+3. Revise the design document to include these calculations and any necessary design adjustments identified through this analysis.

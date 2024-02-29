@@ -1,0 +1,36 @@
+# Notebook Entry
+
+## Date: January 30th
+
+### Brief Statement of Objectives for This Session:
+
+- To update the project proposal by incorporating feedback and new ideas.
+- Add details on data storage on the device and the process for offloading data after a hike.
+- Introduce considerations for filtering noise through Digital Signal Processing (DSP).
+- Clarify the scope of advice and recommendations provided by the project in relation to medical expertise.
+
+### Record of What Was Done:
+
+#### Introduction of New Sections:
+
+- **On-Device Data Storage and Offloading:** Added a new section to the proposal detailing the functionality for storing data directly on the device during hikes. This would allow users to save battery on their smartphones and offload data to a smartphone or computer after the hike. Discussed potential memory requirements and data compression techniques to maximize storage efficiency.
+- **Noise Filtering through DSP:** Outlined the challenges of filtering out noise from sensor data, such as irregular impacts or external pressures that do not contribute to meaningful analysis. Included a brief overview of DSP techniques that could be employed to clean the data, such as filtering algorithms and thresholding.
+
+#### Revisions to Existing Sections:
+
+- Revised the **Solution Components** and **Criterion for Success** sections to reflect the new focus on data storage and noise filtering.
+- Enhanced the **User Interface** section to emphasize the importance of visualizing data in an accessible manner for users, with the option for exporting data for professional analysis by a podiatrist.
+
+#### Clarification on Medical Advice:
+
+- Added a disclaimer clarifying that while the project aims to provide useful feedback on foot stress and hiking technique, it does not offer medical advice. Stressed the importance of consulting with a professional for a thorough analysis of the data.
+- Suggested including references to existing studies on foot pressure and hiking injuries as a basis for any general recommendations made by the app.
+
+#### Additional Considerations:
+
+- Discussed potential privacy and data security measures for storing and transmitting sensitive health data.
+- Considered the user experience of offloading data, proposing a simple and intuitive interface for this process.
+
+### Conclusion:
+
+In this session, the project proposal was significantly enhanced to address feedback and incorporate new ideas. The addition of on-device data storage and offloading mechanisms, along with considerations for noise filtering, strengthens the proposal. By clarifying the project's stance on medical advice, we ensure that the project remains focused on providing value to hikers through data analysis and visualization, while respecting the boundaries of our expertise. This revised proposal lays a solid foundation for developing a tool that enhances hiking safety and enjoyment.
