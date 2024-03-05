@@ -6055,13 +6055,13 @@
 		(uuid "fc6f39d5-36a9-492f-bc24-4b3cb8b07bce")
 	)
 	(label "MOSI"
-		(at 168.91 63.5 0)
+		(at 138.43 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "11527d63-b7df-49cd-8685-e5fd1afa4527")
 	)
@@ -6385,7 +6385,7 @@
 		(uuid "823c43f9-029f-4365-ace2-65a079c874ae")
 	)
 	(label "GPIO21"
-		(at 138.43 78.74 180)
+		(at 138.43 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6539,13 +6539,13 @@
 		(uuid "c618a82c-aab7-482f-8fde-349adef20382")
 	)
 	(label "MISO"
-		(at 168.91 68.58 0)
+		(at 138.43 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "c7a6b52b-2e13-495e-b0a1-4c11f0621aa1")
 	)
@@ -6594,7 +6594,7 @@
 		(uuid "e2ead83a-af99-4627-9d2b-41f151a95bc2")
 	)
 	(label "GPIO12"
-		(at 138.43 76.2 180)
+		(at 138.43 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6616,7 +6616,7 @@
 		(uuid "ec11dda8-2242-4804-9acc-9981af07b7b8")
 	)
 	(label "CS"
-		(at 138.43 43.18 180)
+		(at 138.43 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6638,13 +6638,13 @@
 		(uuid "f44018b5-a6b6-448a-862e-6101340478f9")
 	)
 	(label "SCLK"
-		(at 168.91 66.04 0)
+		(at 138.43 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f702ee3e-676e-43ea-bd98-6fc595890ea7")
 	)
@@ -7569,16 +7569,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "9e09a7a0-de72-4357-92cd-7289061c4890")
+			(uuid "9e09a7a0-de72-4357-92cd-7289061c4891")
 		)
 		(pin "2"
-			(uuid "e21123b7-ae80-4125-8ec2-2ba20688820a")
+			(uuid "e21123b7-ae80-4125-8ec2-2ba20688820b")
 		)
 		(pin "1"
-			(uuid "28e9d82a-3c0f-4c15-ac2d-37f929a024ed")
+			(uuid "28e9d82a-3c0f-4c15-ac2d-37f929a024ee")
 		)
 		(pin "4"
-			(uuid "3b5b4f1f-99a3-4398-a879-cbf39aee493b")
+			(uuid "3b5b4f1f-99a3-4398-a879-cbf39aee493c")
 		)
 		(instances
 			(project "DesignESP32PCB"
@@ -10123,16 +10123,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "9e09a7a0-de72-4357-92cd-7289061c4890")
+			(uuid "9e09a7a0-de72-4357-92cd-7289061c4892")
 		)
 		(pin "2"
-			(uuid "e21123b7-ae80-4125-8ec2-2ba20688820a")
+			(uuid "e21123b7-ae80-4125-8ec2-2ba20688820c")
 		)
 		(pin "1"
-			(uuid "28e9d82a-3c0f-4c15-ac2d-37f929a024ed")
+			(uuid "28e9d82a-3c0f-4c15-ac2d-37f929a024ef")
 		)
 		(pin "4"
-			(uuid "3b5b4f1f-99a3-4398-a879-cbf39aee493b")
+			(uuid "3b5b4f1f-99a3-4398-a879-cbf39aee493d")
 		)
 		(instances
 			(project "DesignESP32PCB"
@@ -12072,16 +12072,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "9e09a7a0-de72-4357-92cd-7289061c4890")
+			(uuid "9e09a7a0-de72-4357-92cd-7289061c4893")
 		)
 		(pin "2"
-			(uuid "e21123b7-ae80-4125-8ec2-2ba20688820a")
+			(uuid "e21123b7-ae80-4125-8ec2-2ba20688820d")
 		)
 		(pin "1"
-			(uuid "28e9d82a-3c0f-4c15-ac2d-37f929a024ed")
+			(uuid "28e9d82a-3c0f-4c15-ac2d-37f929a024f0")
 		)
 		(pin "4"
-			(uuid "3b5b4f1f-99a3-4398-a879-cbf39aee493b")
+			(uuid "3b5b4f1f-99a3-4398-a879-cbf39aee493e")
 		)
 		(instances
 			(project "DesignESP32PCB"
