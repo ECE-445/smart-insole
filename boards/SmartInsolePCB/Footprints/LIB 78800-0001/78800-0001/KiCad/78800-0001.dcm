@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 78800-0001
+D Molex 78800 Series Vertical Hinged Micro SIM Card Connector with SMT Termination
+K
+F https://www.molex.com/pdm_docs/sd/788000001_sd.pdf
+$ENDCMP
+#
+#End Doc Library

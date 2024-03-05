@@ -1,0 +1,17 @@
+.PJS008U-3000-0 :1 ;Memory Card Connectors MicroSD Card Conn Ver Dip Mnt Manual
+PJS008U30000
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=MH1 10=MH2
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5" 6="6" 7="7" 8="8" 9="MH1" 10="MH2"
+*MXP 10
+*DFN PJS008U-3000-0
+~!Mouser Part Number (945-PJS008U-3000-0)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Yamaichi-Electronics/PJS008U-3000-0?qs=nO3wRANIIvnp3f0XwG2X3A%3D%3D)
+~!Manufacturer_Name (Yamaichi)
+~!Manufacturer_Part_Number (PJS008U-3000-0)
+~!Link Datasheet (-)
+~!Height (14.18mm)
+~!3D_Model (PJS008U-3000-0)
+PJS008U-3000-0
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 

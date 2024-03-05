@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SmartInsolePCB")(type "KiCad")(uri "/Users/alyssahuang/Documents/sp24/ece445/smart-insole/boards/Parts/SmartInsolePCB.pretty")(options "")(descr ""))
+)

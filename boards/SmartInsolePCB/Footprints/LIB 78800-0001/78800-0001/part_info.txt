@@ -1,0 +1,9 @@
+Manufacturer=Molex
+PartNumber=78800-0001
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=1.4
+Released=2018-07-24 10:12:01
+Downloaded=2024-03-05 00:22:34
+3D=Y

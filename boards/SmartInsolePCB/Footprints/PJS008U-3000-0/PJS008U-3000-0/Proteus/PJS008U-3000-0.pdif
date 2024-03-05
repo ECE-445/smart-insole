@@ -1,0 +1,182 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "PJS008U-3000-0"
+   (description "Memory Card Connectors MicroSD Card Conn Ver Dip Mnt Manual")
+   (family "CON")
+   (package "PJS008U30000")
+   (attribute "Datasheet Link" "")
+   (attribute "Geometry.Height" "14.18mm")
+   (attribute "Mouser Part Number" "945-PJS008U-3000-0")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Yamaichi-Electronics/PJS008U-3000-0?qs=nO3wRANIIvnp3f0XwG2X3A%3D%3D")
+   (attribute "Manufacturer_Name" "Yamaichi")
+   (attribute "Manufacturer_Part_Number" "PJS008U-3000-0")
+   (gate
+    (symbol "PJS008U-3000-0")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+    (pin "8" 8 PS)
+    (pin "MH1" MH1 PS)
+    (pin "MH2" MH2 PS)
+   )
+  )
+  (symbol "PJS008U-3000-0"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -500) (pt 200 -500) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "PJS008U30000"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -5.775 2.45)
+      (pt 6.225 2.45)
+      (pt 6.225 -2.45)
+      (pt -5.775 -2.45)
+      (pt -5.775 2.45))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -7.225 3.82)
+      (pt 7.225 3.82)
+      (pt 7.225 -3.75)
+      (pt -7.225 -3.75)
+      (pt -7.225 3.82))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -5.775 -2.45)
+      (pt -5.775 2.45)
+      (pt -3.775 2.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 5.225 2.45)
+      (pt 6.225 2.45)
+      (pt 6.225 -2.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -2.775 -2.45)
+      (pt 2.975 -2.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -6.225 1.12)
+      (arc (pt -6.225 1.120) (pt -6.225 1.070) (pt -6.125 1.170) (start -180.0) (sweep 180.0))
+      (pt -6.125 1.12)
+      (arc (pt -6.125 1.120) (pt -6.225 1.070) (pt -6.125 1.170) (start -180.0) (sweep .0))
+      (pt -6.225 1.12))))
+   (leg 1 (pt -3.625 1.120) (padstack 0))
+   (leg 2 (pt -2.525 2.220) (padstack 0))
+   (leg 3 (pt -1.425 1.120) (padstack 0))
+   (leg 4 (pt -0.325 2.220) (padstack 0))
+   (leg 5 (pt 0.775 1.120) (padstack 0))
+   (leg 6 (pt 1.875 2.220) (padstack 0))
+   (leg 7 (pt 2.975 1.120) (padstack 0))
+   (leg 8 (pt 4.075 2.220) (padstack 0))
+   (leg MH1 (pt -4.075 -2.050) (padstack 9))
+   (leg MH2 (pt 4.525 -2.050) (padstack 10))
+   (padstack 0
+    (hole 0.7)
+    (plated true)
+    (pad (layer TCOP) (round 1.200))
+    (pad (layer INNER) (round 1.200))
+    (pad (layer BCOP) (round 1.200))
+   )
+   (padstack 9
+    (hole 0.9)
+    (plated true)
+    (pad (layer TCOP) (round 1.400))
+    (pad (layer INNER) (round 1.400))
+    (pad (layer BCOP) (round 1.400))
+   )
+   (padstack 10
+    (hole 0.9)
+    (plated true)
+    (pad (layer TCOP) (round 1.400))
+    (pad (layer INNER) (round 1.400))
+    (pad (layer BCOP) (round 1.400))
+   )
+   (model "PJS008U-3000-0.stp"
+    (euler 90 0 0)
+    (offset 57 22.100000381469727 -5.980000019073486)
+   )
+  )
+ )
+)

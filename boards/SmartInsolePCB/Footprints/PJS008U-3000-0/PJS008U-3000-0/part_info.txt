@@ -1,0 +1,9 @@
+Manufacturer=Yamaichi
+PartNumber=PJS008U-3000-0
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=1.2
+Released=2018-11-06 10:46:34
+Downloaded=2024-03-04 22:11:50
+3D=Y

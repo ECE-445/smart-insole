@@ -1,0 +1,169 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "78800-0001"
+   (description "Molex 78800 Series Vertical Hinged Micro SIM Card Connector with SMT Termination")
+   (family "CON")
+   (package "788000001")
+   (attribute "Datasheet Link" "https://www.molex.com/pdm_docs/sd/788000001_sd.pdf")
+   (attribute "Geometry.Height" "1mm")
+   (attribute "Mouser Part Number" "538-78800-0001")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/78800-0001?qs=aW78vNDzAorsg%2FJdp7zzAQ%3D%3D")
+   (attribute "Manufacturer_Name" "Molex")
+   (attribute "Manufacturer_Part_Number" "78800-0001")
+   (gate
+    (symbol "78800-0001")
+    (pin "C1" C1 PS)
+    (pin "C2" C2 PS)
+    (pin "C3" C3 PS)
+    (pin "C5" C5 PS)
+    (pin "C6" C6 PS)
+    (pin "C7" C7 PS)
+    (pin "MP1" MP1 PS)
+    (pin "MP2" MP2 PS)
+    (pin "MP3" MP3 PS)
+    (pin "MP4" MP4 PS)
+   )
+  )
+  (symbol "78800-0001"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 800 100) (pt 800 -500) (pt 200 -500) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "788000001"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -8.355 6.925)
+      (pt 8.32 6.925)
+      (pt 8.32 -6.925)
+      (pt -8.355 -6.925)
+      (pt -8.355 6.925))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -9.355 7.925)
+      (pt 9.755 7.925)
+      (pt 9.755 -7.925)
+      (pt -9.355 -7.925)
+      (pt -9.355 7.925))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 8.32 -4)
+      (pt 8.32 -6.925)
+      (pt -8.355 -6.925)
+      (pt -8.355 6.925)
+      (pt 8.32 6.925)
+      (pt 8.32 2))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -9 -2.5)
+      (arc (pt -9.000 -2.500) (pt -9.100 -2.700) (pt -8.900 -2.500) (start 180.0) (sweep 90.0))
+      (pt -9 -2.7)
+      (arc (pt -9.000 -2.700) (pt -9.100 -2.700) (pt -8.900 -2.500) (start 180.0) (sweep -90.0))
+      (pt -9 -2.5))))
+   (leg C1 (pt -6.585 -2.570) (padstack 0))
+   (leg C2 (pt -6.585 -1.330) (padstack 0))
+   (leg C3 (pt -6.585 1.210) (padstack 0))
+   (leg C5 (pt 8.355 -2.570) (padstack 0))
+   (leg C6 (pt 8.355 -1.330) (padstack 0))
+   (leg C7 (pt 8.355 1.210) (padstack 0))
+   (leg MP1 (pt -6.815 5.425) (padstack 7))
+   (leg MP2 (pt 6.495 6.260) (padstack 8))
+   (leg MP3 (pt 6.495 -6.260) (padstack 9))
+   (leg MP4 (pt -6.815 -5.425) (padstack 10))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.800 0.900 0 0 90.000))
+   )
+   (padstack 7
+    (plated false)
+    (pad (layer TCOP) (rectf 0.950 1.200 0 0 90.000))
+   )
+   (padstack 8
+    (plated false)
+    (pad (layer TCOP) (rectf 0.950 1.400 0 0 0.000))
+   )
+   (padstack 9
+    (plated false)
+    (pad (layer TCOP) (rectf 0.950 1.400 0 0 0.000))
+   )
+   (padstack 10
+    (plated false)
+    (pad (layer TCOP) (rectf 0.950 1.200 0 0 90.000))
+   )
+   (model "78800-0001.stp"
+    (euler 0 0 0)
+    (offset 0.20000000298023224 0 0.20999999344348907)
+   )
+  )
+ )
+)
