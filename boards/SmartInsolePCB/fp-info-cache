@@ -1,4 +1,4 @@
-23040065723704166
+23052033013653808
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84588,6 +84588,13 @@ LoRa WiFi Heltec HT-CT62 ESP32C3
 22
 22
 RF_Module
+IC_ESP32-S3
+
+
+0
+69
+69
+RF_Module
 IQRF_TRx2DA_KON-SIM-01
 8 pin SIM connector for IQRF TR-x2DA(T) modules, http://iqrf.org/weben/downloads.php?id=104
 IQRF_KON-SIM-01 IQRF_TRx2DA
@@ -87604,6 +87611,48 @@ LEM Hall Effect Voltage transducer
 0
 5
 5
+SmartInsolePCB
+788000001
+78800-0001
+Connector
+0
+10
+10
+SmartInsolePCB
+PJS008U30000
+PJS008U-3000-0-2
+Connector
+0
+10
+10
+SmartInsolePCB
+SW_B3F-4000_OMR
+
+B3F-4000 
+0
+4
+4
+SmartInsolePCB
+TRAN_SS8050-G_CIP
+
+SS8050-G 
+0
+3
+3
+SmartInsolePCB
+TRAN_SS8050-G_CIP-L
+
+SS8050-G 
+0
+3
+3
+SmartInsolePCB
+TRAN_SS8050-G_CIP-M
+
+SS8050-G 
+0
+3
+3
 Socket
 3M_Textool_240-1288-00-0602J_2x20_P2.54mm
 3M 40-pin zero insertion force socket, though-hole, row spacing 25.4 mm (1000 mils)
