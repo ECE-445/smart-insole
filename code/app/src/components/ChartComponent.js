@@ -11,7 +11,9 @@ import {
 } from "chart.js"
 import { Line } from "react-chartjs-2"
 
-ChartJS.register(
+// react-chartjs-2.js.org/examples/line-chart
+
+https: ChartJS.register(
   CategoryScale,
   LinearScale,
   PointElement,
