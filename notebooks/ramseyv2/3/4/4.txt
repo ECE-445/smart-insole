@@ -1,0 +1,18 @@
+# Notebook Entry: March 4th
+
+## Objectives:
+- Implement debouncing for buttons in the PCB design, following the guidelines from the CAD assignment on the course wiki.
+- Collaborate with the team to finalize the initial PCB schematic design.
+- Attend a PCB design review session for expert advice on voltage regulation and battery considerations.
+
+## Work Session Record:
+This session's agenda was primarily focused on refining our PCB design, with specific attention to debouncing the buttons, a critical step as outlined in our CAD assignment available on the course wiki. The process involved the integration of hardware debouncing mechanisms into our design to ensure reliable button operation, preventing the erroneous signals that can result from mechanical switch bounce.
+
+Simultaneously, we worked as a team to put the finishing touches on our initial PCB schematic design. This involved a comprehensive review of all components and connections to ensure that our design was robust and free of errors. The collaborative effort was crucial in identifying and rectifying minor issues that had previously gone unnoticed, thereby strengthening the overall design.
+
+A significant portion of the session was also dedicated to a PCB design review session, where we received guidance from a TA. One of the insights gained was the necessity of regulating voltage with our Low Dropout Regulator (LDO). The TA highlighted a potential issue with our power supply strategy, particularly concerning the use of a lithium-ion battery with a voltage range of 3.7 to 3.0 volts and an LDO with a low cutoff voltage of 3.43 volts when outputting 3.3 volts. This advice prompted us to reevaluate our power management approach to ensure that our device could operate reliably across the full range of the battery's voltage without encountering power instability due to the LDO's cutoff threshold.
+
+## Diagrams and Figures:
+- Button Debouncing Circuit Diagram
+
+This session was pivotal in advancing our PCB design project, bringing us closer to a finalized schematic that meets both our functional requirements and the technical specifications outlined in our course. The insights from the PCB design review session were particularly helpful, underscoring the importance of power management and component selection in ensuring the reliability and longevity of our design. Future sessions will be dedicated to adjusting our power supply strategy and continuing to refine our schematic based on the feedback received.

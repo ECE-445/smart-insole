@@ -1,0 +1,17 @@
+# Notebook Entry: March 5
+
+## Objectives:
+- Conduct routing and placement of SMD components.
+- Address and correct DRC violation errors.
+
+## Work Session Record:
+In previous work sessions, I followed an online tutorial intended for an ESP32 mini chip. However, this approach proved to be somewhat problematic as the tutorial's specifications did not align with the ESP32 microcontroller models we had access to in our lab. This discrepancy required significant modifications to the circuitry, particularly in the method through which we’d be interfacing with the board, along with a few minor adjustments to ensure compatibility with our hardware.
+
+In hindsight, a more thorough preliminary research phase could have saved considerable time and effort. I later discovered that our course website offers example PCB files specifically tailored to the lab's hardware, which would have been an ideal starting point for our project. This realization underscored the value of consulting available resources and seeking guidance from teaching assistants before delving into design work.
+
+The bulk of the session was consumed by the routing and placement of Surface-Mount Device (SMD) components on our PCB. The goal was to optimize the layout to prevent overlapping connections among components, a task that required careful planning and spatial awareness.
+
+## Figures:
+- Figure: Completed Routing of PCB
+
+Through the design and debugging process, I have developed a solid understanding of basic CAD mechanics, which I anticipate applying to future projects.

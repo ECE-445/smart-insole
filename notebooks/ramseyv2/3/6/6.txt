@@ -1,0 +1,21 @@
+# Notebook Entry: March 6
+
+## Objectives:
+- Conduct routing and placement of Surface-Mount Device (SMD) components on our PCB.
+- Optimize component layout to prevent overlap and ensure efficient use of space.
+- Address and resolve Design Rule Check (DRC) violation errors, specifically focusing on the min angular width violation.
+
+## Work Session Record:
+The focus of this session was on the placement and routing of SMD components for our PCB project. The challenge lay in strategically organizing the components to avoid any overlap of connections, which required a careful consideration of each component's footprint and the available board space. This task was critical in ensuring that our design was not only functional but also adhered to best practices in PCB layout design.
+
+Upon completing what we initially believed to be the final design, I took the lead in addressing the DRC violation errors that emerged. DRC is a crucial step in PCB design, as it helps identify and rectify issues that could lead to manufacturing defects or functional failures.
+
+One of the most prevalent issues we encountered was the min angular width violation. This particular error proved to be a significant obstacle due to the small size of the pins on the components we had chosen. The violation was primarily because the pin dimensions fell below the minimum width allowed by our design rules, which could potentially lead to problems in the manufacturing process.
+
+To mitigate this issue, we decided to increase the diameter of the ground pads associated with the problematic components. This adjustment was carefully calculated to ensure that it would not introduce new layout challenges, while also resolving the min angular width violation. The process involved detailed analysis and modification of the PCB design to accommodate the larger pad sizes without compromising the overall layout or the functionality of the board.
+
+## Figures:
+- **Figure 1: DRC Violation Errors** - Highlighting the most common issue we encountered, the minimum angular width violation. This error was particularly challenging due to the small pin sizes of the components we selected, necessitating an increase in the diameter of the ground pads for resolution.
+- **Figure 2: Ground Pins for the ESP32 Chip** - Demonstrates the adjustments made to ground pad sizes to accommodate the ESP32 chip, ensuring proper fit and connectivity.
+
+This session was geared towards advancing our PCB design towards finalization. By addressing the DRC violation errors, specifically the challenging min angular width violation, we moved closer to ensuring that our design would be manufacturable and function as intended. In this session, we ended up reducing our total DRC violation errors from ~200 to 43 errors.

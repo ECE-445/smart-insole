@@ -1,0 +1,16 @@
+# Notebook Entry: March 1st
+
+## Objectives:
+- Address missing footprints for buttons, resistors, capacitors, and pin headers in the PCB design from February 29.
+- Ensure the ability to work asynchronously on individual devices without issues related to KiCad's library imports and paths.
+
+## Work Session Record:
+During this session, our primary goal was to rectify an oversight from the initial PCB design created on February 29. We discovered that the design was lacking essential footprints. This was relatively straightforward and we just had to use a large enough SMD component.
+
+However, we encountered significant challenges related to KiCad's library management system, which hampered our ability to work efficiently across different devices. As we attempted to work asynchronously, moving the project files from one device to another led to multiple instances of library import errors and path misconfigurations. This resulted in the unlinking of previously linked footprints, causing a critical issue where updating the PCB from the schematic would fail due to these broken links. We were able to relink footprints every time we opened the project after an update had been pushed to our GitHub, but this was a very hacky solution.
+
+## Diagrams and Figures:
+- Image: Update PCB
+- Image: Update Footprint
+
+In the future, we will need to come up with a more permanent solution to migrating from device to device.

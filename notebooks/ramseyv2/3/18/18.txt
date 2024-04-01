@@ -1,0 +1,16 @@
+# Notebook Entry: March 18
+
+## Objectives:
+- Correct programming and boot issues on PCB identified by Jason at office hours
+
+## Work Session Record:
+In previous work sessions, I followed an online tutorial intended for an ESP32 mini chip. However, this approach proved to be somewhat problematic as the tutorial's specifications did not align with the ESP32 microcontroller models we had access to in our lab. This discrepancy required significant modifications to the circuitry, particularly in the method through which we’d be progtamming the board, along with a few minor adjustments to ensure compatibility with our hardware. I had thought previously to just use the USBC connection we had to progam and interface with the ESP 32 chip. However Jason brought it to our attention in office hours that this would be a very finiky method and we should instead use UART headers inorder to pragam and test our PCB design.
+
+In hindsight, a more thorough preliminary research phase could have saved considerable time and effort. I later discovered that our course website offers example PCB files specifically tailored to the lab's hardware, which would have been an ideal starting point for our project. This realization underscored the value of consulting available resources and seeking guidance from teaching assistants before delving into design work.
+
+The bulk of the session was consumed by the reworking of our schematic to include the required ESP 32 programming circuitry.
+
+## Figures:
+- Figure: Completed Routing of PCB
+
+Through the design and debugging process, I have developed a solid understanding of basic CAD mechanics, which I anticipate applying to future projects.
