@@ -60,3 +60,20 @@ Preliminary code:
 Meeting with TA:
 - Try and get the PCB tested thoroughly so that it is before the fourth round order
 - Individual Progress Report
+
+React App:
+- Ramsey pushed the basic version of the React App and I started working on it just to familiarize myself with React and to get some key components on there. The main part that we needed to get on there was the heatmap, and I was able to get it into our app using the visx heatmap circles. The implementation of the heatmap circles took surprisingly longer than I thought, mainly due to my unfamiliarity with React and also with the way the data is package for heatmap.
+- Made some updates to the app just to make it a little prettier, center some of the graphs, and changed the way our heatmap is structured to accept data in a format that is more accurate to our type of project.
+
+- Still waiting on the PCB order (from Order 2) to come in, they said it would be here by this week but this whole week went by without it coming in unfortunately
+
+
+## Week of 4/1 - 4/7
+Meeting with TA:
+- Sorry about delay for the PCB
+- Try planning around building the whole thing on the breadboard
+
+Progress:
+- Got working on the ESP32-S3 and had to update my laptop drivers to recognize the COM port
+- Worked on implementing the Web BLE outlined here: [WEB BLE](https://randomnerdtutorials.com/esp32-web-bluetooth/#project-overview)
+- Got communication between the ESP32-S3 and our Web app on both mine and Ramsey's laptop, which was a good step forward for the data communication.
