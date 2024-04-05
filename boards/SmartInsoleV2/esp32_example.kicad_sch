@@ -15486,7 +15486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SmartInsolePCB:PJS008U30000"
+		(property "Footprint" "MEM2051-00-195-00-A:GCT_MEM2051-00-195-00-A"
 			(at 260.35 315.9 0)
 			(effects
 				(font
