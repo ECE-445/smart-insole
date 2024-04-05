@@ -73,7 +73,13 @@ Meeting with TA:
 - Sorry about delay for the PCB
 - Try planning around building the whole thing on the breadboard
 
-Progress:
+Web BLE:
 - Got working on the ESP32-S3 and had to update my laptop drivers to recognize the COM port
 - Worked on implementing the Web BLE outlined here: [WEB BLE](https://randomnerdtutorials.com/esp32-web-bluetooth/#project-overview)
 - Got communication between the ESP32-S3 and our Web app on both mine and Ramsey's laptop, which was a good step forward for the data communication.
+
+MPU6050 Accelerometer/Gyroscope:
+- Ordered a breadboard version of our MPU accelerometer/gyroscope so that we can prepare for if our PCB is good
+- It took a while to achieve I2C communication between the ESP32 and Accelerometer/Gyroscope and there were two main issues: the power supplied to the MPU was inconsistent as indicated by the green light flickering so I went to the lab and soldered the pins to the board. Then I needed to adjust the pins for the I2C communication, specifically using GPIO8 for SDA and GPIO9 for SCL. 
+- Then I got communication working between the MPU and the ESP32 using the Web BLE.
+- I updated the web application code to accept the accelerometer measurements properly and integrated a graph that plots the accelerometer measurements in real time.
