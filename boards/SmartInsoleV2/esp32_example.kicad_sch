@@ -7907,16 +7907,6 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 68.58) (xy 361.95 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dc286bc-01e7-431d-8736-4e53718dc44c")
-	)
-	(wire
-		(pts
 			(xy 360.045 40.64) (xy 360.045 43.18)
 		)
 		(stroke
@@ -9017,16 +9007,6 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 66.04) (xy 361.95 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d732abea-da81-4446-9197-db9487705c4b")
-	)
-	(wire
-		(pts
 			(xy 283.21 53.34) (xy 283.21 54.61)
 		)
 		(stroke
@@ -9735,6 +9715,28 @@
 		)
 		(uuid "e7b89fbf-9ada-405f-81ac-278295642453")
 	)
+	(label "PRESS9"
+		(at 312.42 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "07e02dc6-60e1-4c9c-b70f-d9e89c9f8c40")
+	)
+	(label "PRESS6"
+		(at 312.42 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "10f22ebe-d7a1-47a5-a7ae-5b624894394c")
+	)
 	(label "CHIP_PU"
 		(at 214.63 67.31 0)
 		(fields_autoplaced yes)
@@ -9779,8 +9781,8 @@
 		)
 		(uuid "2211c3cc-a572-47f6-b748-dbf54e16b76b")
 	)
-	(label "PRESS9"
-		(at 312.42 96.52 180)
+	(label "PRESS8"
+		(at 312.42 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9788,29 +9790,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "24061845-5d6a-4581-ac98-7f4f76328195")
-	)
-	(label "SDA_6050"
-		(at 361.95 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26baaac9-9c57-48d6-bd80-085abdb0985f")
-	)
-	(label "PRESS5"
-		(at 312.42 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2a3328e8-a9b4-4a7a-a90b-d0551feea99a")
+		(uuid "236dd9f2-f47c-4da9-90ad-416dd05dabf7")
 	)
 	(label "RX"
 		(at 21.59 158.75 180)
@@ -9834,17 +9814,6 @@
 		)
 		(uuid "2e8fe8d5-97ea-453c-9bd0-ca94a13c9435")
 	)
-	(label "PRESS10"
-		(at 312.42 99.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "31f5fea2-a76c-4171-ad67-51a3928a2235")
-	)
 	(label "TX"
 		(at 21.59 156.21 180)
 		(fields_autoplaced yes)
@@ -9867,6 +9836,17 @@
 		)
 		(uuid "35ad3cc7-9e4b-45f1-866f-032304c901f8")
 	)
+	(label "PRESS3"
+		(at 312.42 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a7cf05d-5827-45c0-a7e1-7fedf8bc255c")
+	)
 	(label "GPIO3_STRAPPING"
 		(at 312.42 76.2 180)
 		(fields_autoplaced yes)
@@ -9888,17 +9868,6 @@
 			(justify right bottom)
 		)
 		(uuid "3c1ba4bd-b661-4659-aff2-59b3c208f9ac")
-	)
-	(label "PRESS6"
-		(at 312.42 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3efe9ee3-0d24-4fed-9592-25afb2872452")
 	)
 	(label "PRESS3"
 		(at 35.56 215.9 0)
@@ -9977,6 +9946,17 @@
 		)
 		(uuid "5c5e5f62-6aa2-4026-a5a8-a1e28474c0c0")
 	)
+	(label "PRESS1"
+		(at 312.42 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5d7ec638-d718-4765-af94-e50339840444")
+	)
 	(label "D+"
 		(at 54.61 107.95 0)
 		(fields_autoplaced yes)
@@ -9987,6 +9967,17 @@
 			(justify left bottom)
 		)
 		(uuid "5e7935ec-6d20-47ca-9412-ba970e220a4c")
+	)
+	(label "PRESS7"
+		(at 312.42 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6265345e-4f6b-4378-a95d-c89ee246b097")
 	)
 	(label "MTCK"
 		(at 361.95 83.82 0)
@@ -10032,8 +10023,8 @@
 		)
 		(uuid "6ba37ef6-70da-4827-b649-57bf3a12d130")
 	)
-	(label "PRESS8"
-		(at 312.42 93.98 180)
+	(label "SCL_6050"
+		(at 312.42 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10041,7 +10032,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "71eb4903-22b4-46c6-9417-dd68fe30112a")
+		(uuid "727cc77a-b043-4f31-9623-65874d921df1")
 	)
 	(label "VBAT_SENSE"
 		(at 309.88 48.26 180)
@@ -10087,17 +10078,6 @@
 		)
 		(uuid "887abf62-cba4-4ea4-803a-8dbb1c4063c7")
 	)
-	(label "PRESS1"
-		(at 312.42 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8c2fedd2-4b6e-4d11-bd73-5ad1558cb1a7")
-	)
 	(label "Start Hike"
 		(at 383.54 161.29 0)
 		(fields_autoplaced yes)
@@ -10108,17 +10088,6 @@
 			(justify left bottom)
 		)
 		(uuid "91c5d019-c9aa-4826-8293-83ecb5a5a721")
-	)
-	(label "PRESS7"
-		(at 312.42 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "92ec3ee1-a75c-4608-9fd3-26a5871015c4")
 	)
 	(label "CS"
 		(at 361.95 93.98 0)
@@ -10174,6 +10143,17 @@
 			(justify left bottom)
 		)
 		(uuid "97a99088-04fd-4fa4-915d-8bc804182db6")
+	)
+	(label "PRESS4"
+		(at 312.42 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9aae2db8-2fda-4e11-a2ab-7b6f4da9e385")
 	)
 	(label "SDA_6050"
 		(at 129.54 223.52 0)
@@ -10241,16 +10221,16 @@
 		)
 		(uuid "ac0972f3-c5cb-43e5-9526-8fd220d91e88")
 	)
-	(label "SCL_6050"
-		(at 361.95 68.58 0)
+	(label "PRESS2"
+		(at 312.42 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "b2abdeb6-233d-4052-bc1d-84ed2320c580")
+		(uuid "afa18854-c52b-40dc-a76b-320f3e61dfa0")
 	)
 	(label "CHIP_PU"
 		(at 309.88 45.72 180)
@@ -10262,17 +10242,6 @@
 			(justify right bottom)
 		)
 		(uuid "b2f14952-cc9c-44d5-9be4-da9e66cf3b42")
-	)
-	(label "PRESS2"
-		(at 312.42 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b4721525-9db8-448d-9aa1-1163a917261c")
 	)
 	(label "MOSI"
 		(at 361.95 88.9 0)
@@ -10295,17 +10264,6 @@
 			(justify left bottom)
 		)
 		(uuid "b7780663-273a-4fc3-a2de-c13b6b5cf056")
-	)
-	(label "PRESS4"
-		(at 312.42 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c2f46243-d623-489a-8118-94568de6540b")
 	)
 	(label "MISO"
 		(at 361.95 91.44 0)
@@ -10395,6 +10353,17 @@
 		)
 		(uuid "d3de5eaf-8ab4-44ed-9d01-600b672c8483")
 	)
+	(label "PRESS5"
+		(at 312.42 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8ff1af4-0558-412f-94f5-243457c49ddf")
+	)
 	(label "End Hike"
 		(at 312.42 63.5 180)
 		(fields_autoplaced yes)
@@ -10461,8 +10430,8 @@
 		)
 		(uuid "f02ea5e2-775d-4bc4-893a-1c7520db7891")
 	)
-	(label "PRESS3"
-		(at 312.42 81.28 180)
+	(label "PRESS10"
+		(at 312.42 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10470,7 +10439,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f1d48d17-d848-4d1b-844d-883eff82d457")
+		(uuid "f5b1f070-af0e-4ab2-95e9-b666e8b3501b")
 	)
 	(label "RTS"
 		(at 172.72 92.71 180)
@@ -10504,6 +10473,17 @@
 			(justify left bottom)
 		)
 		(uuid "fc125511-0e8b-4ae0-bcdc-7d4e308ab4f9")
+	)
+	(label "SDA_6050"
+		(at 312.42 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fdb5e061-23bf-45a2-a841-a576f84d08a6")
 	)
 	(label "GPIO0_STRAPPING"
 		(at 361.95 96.52 0)
@@ -10544,7 +10524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 278.13 140.97 0)
 			(effects
 				(font
@@ -10896,7 +10876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 200.66 0)
 			(effects
 				(font
@@ -11029,7 +11009,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 261.62 0)
 			(effects
 				(font
@@ -11379,7 +11359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 374.65 144.78 0)
 			(effects
 				(font
@@ -11712,7 +11692,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 269.24 0)
 			(effects
 				(font
@@ -12075,7 +12055,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 223.52 0)
 			(effects
 				(font
@@ -12142,7 +12122,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 231.14 0)
 			(effects
 				(font
@@ -12946,7 +12926,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 238.76 0)
 			(effects
 				(font
@@ -13670,7 +13650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 374.65 165.1 0)
 			(effects
 				(font
@@ -14461,7 +14441,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 367.03 140.97 0)
 			(effects
 				(font
@@ -14733,7 +14713,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 208.28 0)
 			(effects
 				(font
@@ -14803,7 +14783,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 294.64 143.51 0)
 			(effects
 				(font
@@ -14939,7 +14919,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 246.38 0)
 			(effects
 				(font
@@ -15007,7 +14987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 367.03 161.29 0)
 			(effects
 				(font
@@ -15637,7 +15617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 228.6 140.97 0)
 			(effects
 				(font
@@ -16108,7 +16088,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 254 0)
 			(effects
 				(font
@@ -16383,7 +16363,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 215.9 0)
 			(effects
 				(font

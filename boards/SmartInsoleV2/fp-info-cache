@@ -1,4 +1,4 @@
-23070480958635030
+23070883435268416
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63412,13 +63412,6 @@ Yellow 5381 Series LED
 0
 2
 2
-MEM2051-00-195-00-A
-GCT_MEM2051-00-195-00-A
-
-
-0
-13
-13
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -84594,6 +84587,13 @@ LoRa WiFi Heltec HT-CT62 ESP32C3
 0
 22
 22
+RF_Module
+IC_ESP32-S3
+
+
+0
+69
+69
 RF_Module
 IQRF_TRx2DA_KON-SIM-01
 8 pin SIM connector for IQRF TR-x2DA(T) modules, http://iqrf.org/weben/downloads.php?id=104
