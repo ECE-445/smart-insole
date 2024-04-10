@@ -7256,7 +7256,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 0 4.87 360)
+			(at 0 4.87 0)
 			(layer "F.Fab")
 			(uuid "db72de1c-3657-45e0-83af-e94009546ea5")
 			(effects
@@ -15109,6 +15109,72 @@
 			)
 			(justify left bottom)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Cu")
+		(uuid "32d3d07e-5170-47f2-a5b8-e23b76a6bef1")
+		(pts
+			(xy 229.34 82) (xy 229.34 37.91)
+		)
+		(height 10.51)
+		(gr_text "44.0900 mm"
+			(at 238.05 59.955 90)
+			(layer "F.Cu")
+			(uuid "32d3d07e-5170-47f2-a5b8-e23b76a6bef1")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Cu")
+		(uuid "b9cf56f2-e509-4d14-91bc-f75661866c04")
+		(pts
+			(xy 229.34 82) (xy 163.29 82)
+		)
+		(height -8.35)
+		(gr_text "66.0500 mm"
+			(at 196.315 88.55 0)
+			(layer "F.Cu")
+			(uuid "b9cf56f2-e509-4d14-91bc-f75661866c04")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
 		(start 204.11 49.87)
@@ -23332,12 +23398,12 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 212.925909 79.727114) (xy 212.962634 79.748318) (xy 213.04542 79.7705) (xy 223.976207 79.7705)
-				(xy 224.043246 79.790185) (xy 224.089001 79.842989) (xy 224.098945 79.912147) (xy 224.06992 79.975703)
-				(xy 224.063888 79.982181) (xy 223.372888 80.673181) (xy 223.311565 80.706666) (xy 223.285207 80.7095)
-				(xy 209.320189 80.7095) (xy 209.25315 80.689815) (xy 209.207395 80.637011) (xy 209.197451 80.567853)
-				(xy 209.226476 80.504297) (xy 209.232508 80.497819) (xy 209.983508 79.746819) (xy 210.044831 79.713334)
-				(xy 210.071189 79.7105) (xy 212.863907 79.7105)
+				(xy 212.925909 79.727114) (xy 212.962634 79.748318) (xy 213.04542 79.7705) (xy 213.131126 79.7705)
+				(xy 223.976207 79.7705) (xy 224.043246 79.790185) (xy 224.089001 79.842989) (xy 224.098945 79.912147)
+				(xy 224.06992 79.975703) (xy 224.063888 79.982181) (xy 223.372888 80.673181) (xy 223.311565 80.706666)
+				(xy 223.285207 80.7095) (xy 209.320189 80.7095) (xy 209.25315 80.689815) (xy 209.207395 80.637011)
+				(xy 209.197451 80.567853) (xy 209.226476 80.504297) (xy 209.232508 80.497819) (xy 209.983508 79.746819)
+				(xy 210.044831 79.713334) (xy 210.071189 79.7105) (xy 212.863907 79.7105)
 			)
 		)
 		(filled_polygon
