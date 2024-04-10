@@ -447,9 +447,9 @@ We mapped these pins willy nilly or just didn't have them and didn't realize tha
 
 ### Work Session Record:
 
-Worked to fix DRC errors when making the board. 
+Worked to fix DRC errors when making the board. These included the ones detailed earlier where we were having min angular width errors on footprints of some of our components including the Micro USB connector, the SD card holder, and a few other such compoennts. Though out this process we worked to add in vias for circuit protection. Additionally we had to connect isolated islands or reconnect componetes such that we didn't end up with these islands. This process was quite long but can be summed up by saying googled and corrected errors on our PCB in Kicad. 
 
-removed mounting holes and buttons on the board to reduce board size so it is easier to mount to a shoe. 
+After I worked on correcting the DRC erros Alyssa wanted to make the PCB smaller. As such we dissscusses compoenents to remove and decided on removing mounting holes and buttons on the board to reduce board size so it is easier to mount to a shoe. This reduced the size quite a bit but caused Alyssa to take over on correctin the new DRC errors.
 
 ### Figures:
 
@@ -458,29 +458,32 @@ removed mounting holes and buttons on the board to reduce board size so it is ea
 ## Notebook Entry: April 9 2024
 
 ### Objectives:
-- 
+- Get a PCB made and correct connection errors
+- Get TA help to look over and verify our PCB board
+- send PCB gerber files out for PCBWay printing
 
 ### Work Session Record:
 
-Other areas we realized were wrong were that the bluetooth module when on would deactivate channel 2 for Annlog to Digital compatible pins and as such had to account for that
+We needed to remake a bunch of connections again as we realized that we needed to remap channel 2 of our annalog ot digital pins to channel 1. This was because when the bluetooth module is active we couldn't read from these pins as the bluetooth module would be using them. Additionally I had to conduct themal analisis knowing the bluetooth module would use 300 mA of power which our LDO would drop 1.7 V of power. This means that .51 Watts of power would be dissipated by the LDO. This seems to be ok but may need a heat sinc on top to reduce this power draw.  
 
-fixed DRC errors
-remapped wires
-- analog to digital channel2
-created a bluetooth button so remaining wires on channel 2 woudl be ok
-placed updated SD card footprint
-moved micro usb to edge
+We realized that the bluetooth module when on would deactivate channel 2 for Annlog to Digital compatible pins and as such had to account for that by remapping pins. However we were unable to remap all pins and as such had to think of a different solution. I thoguht to add another button to activate bluetooth pairing or deactivate it while a hiker wanted to offload data. This would shut off the data recording and would allow for us to validate that we wouldn't use channel 2.
 
-went to office hours to check erros
+Along side this I fixed many DRC errors and well as remapped wires. Additionally I placed an updated SD card footprint on the board as our origonal one was throwing an error which the TA, Google nor I could figure out. Jason at his office hour looked over our board and realized we needed to move our micro usb to edge which I did. 
+
+Some erros I fixed in office hours were:
 - foot print expected though hole got SMD
-- min spoke count expected 2 got 1
-- min angular width of default foorprint
-- rear solder mask bridges items with different widths
+    - Same error on example ESP 32 board and Jason confired this was expected
+- min spoke count expected 2 got 1 when copper ground sheets only connect by one direction to ground pins.
+    - Same error on example ESP 32 board and Jason confired this was expected
+- min angular width of default foorprints for micro USB
+    - Same error on example ESP 32 board and Jason confired this was expected
+- rear solder mask bridges items with different widths on the solder jumper for the strapping pins
+    - Same error on example ESP 32 board and Jason confired this was expected
 
 
 ### Figures:
 
-![Error corrected PCB](./April5erros.png)
+![Error corrected PCB](./April5errors.png)
 
 
 
