@@ -6471,6 +6471,12 @@
 		(uuid "4b238253-2f52-46e4-bf5c-05316bf941fd")
 	)
 	(junction
+		(at 389.89 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d481329-5c5a-4b0a-800b-9772b71d438f")
+	)
+	(junction
 		(at 246.38 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6784,6 +6790,16 @@
 	)
 	(wire
 		(pts
+			(xy 372.11 124.46) (xy 379.73 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01b49d67-063c-4971-bcba-e7b96d23a040")
+	)
+	(wire
+		(pts
 			(xy 86.36 228.6) (xy 86.36 231.14)
 		)
 		(stroke
@@ -6791,6 +6807,16 @@
 			(type default)
 		)
 		(uuid "0234dbd4-e40a-4936-ade3-8d0e47267e28")
+	)
+	(wire
+		(pts
+			(xy 389.89 124.46) (xy 389.89 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "027a8d03-f11b-432d-99c9-b810c3ef3aa8")
 	)
 	(wire
 		(pts
@@ -7614,6 +7640,26 @@
 	)
 	(wire
 		(pts
+			(xy 384.81 124.46) (xy 389.89 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f52644c-770b-440b-ba02-3ba3086a6fc5")
+	)
+	(wire
+		(pts
+			(xy 64.77 45.72) (xy 71.12 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fa18a6c-ad7c-4118-bf7a-08a7653be7d8")
+	)
+	(wire
+		(pts
 			(xy 64.77 48.26) (xy 64.77 49.53)
 		)
 		(stroke
@@ -7691,6 +7737,16 @@
 			(type default)
 		)
 		(uuid "57a0bc89-daea-48e2-8c97-945e8f9812ef")
+	)
+	(wire
+		(pts
+			(xy 389.89 124.46) (xy 398.78 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a1473d5-c54a-4f42-bf68-19213e47f2da")
 	)
 	(wire
 		(pts
@@ -9754,6 +9810,16 @@
 	)
 	(wire
 		(pts
+			(xy 355.6 124.46) (xy 369.57 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcee9384-4dcb-444c-a2c2-991e82edb61d")
+	)
+	(wire
+		(pts
 			(xy 246.38 161.29) (xy 246.38 162.56)
 		)
 		(stroke
@@ -10170,6 +10236,17 @@
 		)
 		(uuid "4d659780-0f68-41c8-bd2e-4b14783a61b3")
 	)
+	(label "Bluetooth"
+		(at 312.42 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4ff5db01-889c-423c-9377-c9338b6aa201")
+	)
 	(label "CHIP_PU"
 		(at 175.26 144.78 0)
 		(fields_autoplaced yes)
@@ -10279,6 +10356,17 @@
 			(justify right bottom)
 		)
 		(uuid "6ba37ef6-70da-4827-b649-57bf3a12d130")
+	)
+	(label "Bluetooth"
+		(at 398.78 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7246d3dc-b55b-4eba-83e8-e58e7e2a77a5")
 	)
 	(label "SCL_6050"
 		(at 312.42 81.28 180)
@@ -10433,17 +10521,6 @@
 			(justify right bottom)
 		)
 		(uuid "a2000007-1d4a-4da6-92e2-11ed243d9297")
-	)
-	(label "POWER FROM BATTERY"
-		(at 64.77 45.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a50df082-9c92-4dbc-b7c4-65d46a9c5542")
 	)
 	(label "MTDI"
 		(at 175.26 157.48 0)
@@ -11453,6 +11530,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 382.27 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "141d96c3-4ffe-45a6-b765-5040527be4bb")
+		(property "Reference" "R26"
+			(at 382.27 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5k"
+			(at 382.27 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 382.27 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 382.27 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 382.27 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb996100-eb70-4966-a412-f4b79232737c")
+		)
+		(pin "2"
+			(uuid "1a18ddc9-533f-4fe7-8c54-b20c32e1b216")
+		)
+		(instances
+			(project "esp32_example"
+				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "basic:R")
 		(at 208.28 100.33 90)
 		(unit 1)
@@ -11651,6 +11796,72 @@
 			(project "esp32_example"
 				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 389.89 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f39f566-7cca-48c9-957c-a0e2d2ffd3b1")
+		(property "Reference" "#PWR023"
+			(at 389.89 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 389.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 389.89 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 389.89 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 389.89 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5a65858-dbfa-4660-a25b-c839a74cf9cd")
+		)
+		(instances
+			(project "esp32_example"
+				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -12762,6 +12973,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 355.6 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52ac8fbc-a2aa-43f1-b7ba-76608ee0eace")
+		(property "Reference" "#PWR022"
+			(at 359.41 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 351.79 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 355.6 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355.6 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 355.6 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db53d71b-f9c8-49bf-a6f7-443cb852c49a")
+		)
+		(instances
+			(project "esp32_example"
+				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 287.02 57.15 0)
 		(unit 1)
@@ -13565,6 +13843,76 @@
 			(project "esp32_example"
 				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 389.89 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77aeb8c6-0bbc-43f3-b678-1397f23ad2e7")
+		(property "Reference" "C5"
+			(at 392.43 127.0062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 392.43 129.5462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 389.89 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 389.89 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 389.89 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "810eea3d-7851-41b8-96cd-5d79c843c096")
+		)
+		(pin "2"
+			(uuid "a71f3e43-66d2-4acd-a60a-b8caa7a5559f")
+		)
+		(instances
+			(project "esp32_example"
+				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -15085,6 +15433,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 372.11 119.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afa7eacf-6909-411d-ad6d-2b489e6bbc8b")
+		(property "Reference" "J10"
+			(at 367.284 114.808 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 362.966 117.602 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 372.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 372.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 372.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f9d078a-dc26-4ee3-a184-c8e1a70f68b1")
+		)
+		(pin "1"
+			(uuid "4a58fd4e-9aab-4bc1-959e-ac490e8e197e")
+		)
+		(instances
+			(project "esp32_example"
+				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 374.65 147.32 0)
 		(unit 1)
@@ -15145,6 +15562,72 @@
 			(project "esp32_example"
 				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 71.12 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1836cb0-0e0d-411d-ae83-f39fc0c645b3")
+		(property "Reference" "#PWR021"
+			(at 67.31 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 74.93 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ba088a3-79ac-4d11-bc0d-63c0f5216d0e")
+		)
+		(instances
+			(project "esp32_example"
+				(path "/089191f8-f7a2-4ac6-bbe2-c747b0c5500f"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)

@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "8.0.0"
     },
-    "CreationDate": "2024-03-19T09:43:12-05:00"
+    "CreationDate": "2024-04-09T16:33:37-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "DesignESP32PCB",
-      "GUID": "44657369-676e-4455-9350-33325043422e",
+      "Name": "esp32_example",
+      "GUID": "65737033-325f-4657-9861-6d706c652e6b",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 52.0788,
-      "Y": 81.634
+      "X": 65.08,
+      "Y": 44.08
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -28,53 +28,53 @@
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.2,
-      "TrackToRegion": 0.5,
-      "RegionToRegion": 0.5
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "DesignESP32PCB-F_Cu.gtl",
+      "Path": "esp32_example-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "DesignESP32PCB-B_Cu.gbl",
+      "Path": "esp32_example-B_Cu.gbl",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "DesignESP32PCB-F_Paste.gtp",
+      "Path": "esp32_example-F_Paste.gtp",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "DesignESP32PCB-B_Paste.gbp",
+      "Path": "esp32_example-B_Paste.gbp",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "DesignESP32PCB-F_Silkscreen.gto",
+      "Path": "esp32_example-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "DesignESP32PCB-B_Silkscreen.gbo",
+      "Path": "esp32_example-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "DesignESP32PCB-F_Mask.gts",
+      "Path": "esp32_example-F_Mask.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "DesignESP32PCB-B_Mask.gbs",
+      "Path": "esp32_example-B_Mask.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "DesignESP32PCB-Edge_Cuts.gm1",
+      "Path": "esp32_example-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
