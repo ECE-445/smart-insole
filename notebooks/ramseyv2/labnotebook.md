@@ -1089,14 +1089,14 @@ Our PCB design on Kicad mapped the pins to different places than the pins I had 
 
 ### Objectives:
 - finalize part order
+- order compoents
 
 
 ### Work Session Record:
-
+I worked this mornign on going through the part order process. This was a long process that took a while to add everything to the cart. I also had to order from each vendor seperatly and take into account if things were in stock or not as the lead time would not allow for us to get these parts in time. Additionally, I had to compile a list of parts needed from the electronics services shop. 
 
 ### Figures:
-
-
+![PCB part order](./AApril16_purchasing.png)
 
 
 
@@ -1109,9 +1109,11 @@ Our PCB design on Kicad mapped the pins to different places than the pins I had 
 
 
 ### Work Session Record:
+The NPN transistors I had ordered on Mouser sadly went out of stock overnight and now had a lead time of ~2 months. This was unacceptable as we wouldn't get our parts on time and would not be able to build our PCB. As such we canceled this order and made a new order on digi Key which did have the part in stock. I kept in constant comminication with the purchaising office to make sure the parts were able to arrive on time.
 
 
 ### Figures:
+![canceled](April23_canceled.png)
 
 
 
@@ -1125,18 +1127,143 @@ Our PCB design on Kicad mapped the pins to different places than the pins I had 
 
 
 ### Work Session Record:
+This day we demoed our bread boarded smart insole device to our TA and got feedback on what we should prioritize and what our estimated point total would be. This was a lot lower than we wanted and caused us to redouble our efforts towards creating a working PCB. I also worked to create a printed enclosure for our PCB which could be mouted with velcro or with a clip to the inside of the shoe. I workded to design the part in Fusion 360 where I was somewhat comforterable with 3D modeling. I used the dimensions on Kicad to create an enclosue that would fit our PCB. This was an impoartant process as one of our high level requirements was to make a moular design which would not impede a hiker. I tried to design this enclosure to be as compact as possible while still mainaining functionality. This required holes for LEDs, buttons, and wires to get through. Additionally I consulted the relevant footprint datasheets for the dimensions of the compenets which would allow us to fit in the pcb and the components.
 
 
 ### Figures:
+![placement](pcb_images/placement.jpeg)
+![measure1](pcb_images/measure1.jpeg)
+![measure2](pcb_images/measure2.jpeg)
+![kicad](pcb_images/kicad.png)
+![3dprinting](pcb_images/3dprinting.jpeg)
+![worn](pcb_images/worn.jpeg)
+![no](pcb_images/no_usb_and_sd.jpeg)
 
+### Sources:
+- https://www.sparkfun.com/datasheets/Components/LED/COM-09590-YSL-R531R3D-D2.pdf
+- https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3s.pdf
 
 ## Notebook Entry: April 19 2024
 
 
 ### Objectives:
 - make adjustments to tolerances
+- add holes for SD card and Micro USB
 - print updated enclosure
+
  ### Work Session Record:
+Worked with fusion360 to agian remake the 3D printed enclosure which would fit on a users shoe. We realized once inserting the PCB into the enclosue that the IO would not be able to be accessed. This would not be ideal as users would need to be able to access the SD card and be able to charge our device. As such I worked to add these in again useing the kicad measurements. Additionally I consulted the relevant footprint datasheets for the dimensions of the compenets which would allow us to fit in the pcb and the components. Additionally the PCB barly fit into the enclosure and as such I scaled up the model by factor 1.01 to account for the exapnsion and toloraces which may occure when printing with FDM. These I thought would be a final print so I tried using resin as it would be much higher quality and allow for more accuate part. This mentality and thought process however was a hinderance as it forced me to wait a while for the resin printers to print. Effectivly 3x my print time on parts. I also had to use labs which were only open from 4-10pm and 5-11pm. This truly limited the time I'd be allowed to work and as such slowed down developement. The resin printing process requrired a custom slicer for each lab. After the print I'd have to take care not to get resin on me as it is toxic. Addtionally I would have to do a 15 minute wash cycle proceeded by a 20 minute cure cycle so the resin can harden. However there was an issue with the resin printer as there was a massive hole in one of the enclosures.  
+
+### Figures:
+![resinlayout](pcb_images/resin_layout.jpeg)
+![resin_printing](pcb_images/resin_printing.jpeg)
+![Resin_curing](pcb_images/Resin_curing.jpeg)
+![Resin_print](pcb_images/Resin_print.jpeg)
+![resin_print_back](pcb_images/resin_print_back.jpeg)
+![resin_print_top](pcb_images/resin_print_top.jpeg)
+
+### Sources:
+- https://au.mouser.com/datasheet/2/448/Yamaichi_Electronics_08162018_PJS008U-3000-0_RevD-1391577.pdf
+- https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_micro.pdf
+
+
+## Notebook Entry: April 22 2024
+
+
+### Objectives:
+- make adjustments to cad since PCB has thickness
+
+### Work Session Record:
+Worked to adjust the 3D fusion model to account for the PCB and its ~2 millimeters of physical thickness. This I forgot about when designing the holes though which the SD card and the micro USB would fit thoguh when placed in the housing. As such I moved all holes on the side up by 2 millimeters. I then reprinted on a resin printer and went through the whole curing and wash cycle process again. As shown in the figue the print turned our well. I then bought this to lab where Alyssa and I worked on SMD soldering parts to our PCB. This process was long as we not only had to find each component and place it on really small solder pads but bake it in the oven as when we tried heat gun it was a little inaccurate and to hard to use percisely. I could not imaging using anything smaller that a 805 compoent as even these were extreemly tiny and hard to work with. Overall we got the PCB soldered. We then moved on to try programming it. However we were unable to get it to show up on any COM port on our laptop. We then examined our connections and realized that our board was not getting power. This we realized was since USB did not feed into our LDO which supplies the regulated 3.3v power to our ESP32 board. As such we were forced to solder on a wire connecting the USD 5v power (with also joins with the 3.7-3.3v Battery) to the input on our LDO. This is dipicted in the component_markup figure at lable P. where we connected these 2 pads. Next we tried connecting over COM with the ESP32 and it showed up. However we were unable to program it and got an error message. We though it wasn't in the right mode and were proved correct when examining the strippain pin out requirements of the ESP32. We realized that we were supposed to leave IO46 floating and to do so not populate a resitor. As such we unsoldered resistor R9 shown in component_markup. After this we were able to program it sucessfully. However in order to get serial data to show up we used ESP32S3 BOX instead of ESP32S2 Dev Board to program our board. We don't know why this was the case but we rolled with it. 
 
 
 ### Figures:
+![resin_print_new](pcb_images/Resin_print_new.jpeg)
+![up_2_mm](pcb_images/up_2_mm.jpeg)
+![component_markup](pcb_images/component_markup.jpeg)
+![USB+LDO](USB+LDO.png)
+![strappign](strappign.png)
+
+
+### sources:
+- https://courses.engr.illinois.edu/ece445/wiki/#/esp32_example/index
+
+
+## Notebook Entry: April 22 2024
+
+
+### Objectives:
+- DAY
+    - make adjustments to cad since PCB now is a bit bigger due to connecting wire
+    - identify why SD card opperations aren't working
+- NIGHT
+    - work on PCB 
+    - make esp 32 chip work
+    - debug circuit
+    - check connections
+    - program esp 32
+    - test all compoents
+    - test sd card
+    - test IMU
+    - test pressure
+
+### Work Session Record:
+
+
+### Figures:
+![Fdm_print](pcb_images/Fdm_print.jpeg)
+![component_markup](component_markup.jpeg)
+
+
+
+### Resources:
+- https://www.pololu.com/blog/403/new-product-breakout-board-for-microsd-card
+- https://gct.co/files/drawings/mem2052.pdf
+
+## Notebook Entry: April 23 2024
+
+
+### Objectives:
+- fix sd
+- fix IMU (help alyssa)
+- add buttons
+- fix capacitors causing long discharge time of capaciter
+- add LED
+- create presentation
+
+### Work Session Record:
+Found out that SD card pins weren't mappeed right
+
+
+### Figures:
+
+### Resources:
+
+
+## Notebook Entry: April 24 2024
+
+
+### Objectives:
+- create presentation demo
+- polish up long discharge of button
+- move PCB to casing
+
+### Work Session Record:
+
+
+### Figures:
+
+### Resources:
+
+
+## Notebook Entry: April 25 2024
+
+
+### Objectives:
+- create mock demo presentaion
+
+### Work Session Record:
+
+### Figures:
+
+### Resources:
