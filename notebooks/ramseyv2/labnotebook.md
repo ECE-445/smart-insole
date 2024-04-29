@@ -604,7 +604,7 @@ I worked this morning on going through the part order process. This was a long p
 
 ### Figures:
 
-![PCB part order](./AApril16_purchasing.png)
+![PCB part order](./April16_purchasing.png)
 
 ## Notebook Entry: April 17 2024
 
