@@ -123,6 +123,7 @@ Created GitHub to contain lab notebooks, PCB design files, Web application, and 
 - Plans include displaying hiking statistics through charts and graphs using Next.js and various NPM modules.
 
 ## Diagrams and Figures:
+
 ![software](2/15/software_flow_chart.png)
 ![web](2/15/web_interface_prototype.png)
 
@@ -161,12 +162,11 @@ Created GitHub to contain lab notebooks, PCB design files, Web application, and 
 #### Diagrams and Figures:
 
 - **Pressure Sensor Wiring Diagram:** A schematic showing the arrangement of resistors and connections to the microcontroller to form a voltage divider network.
-![Pressure_sensor_wiring](2/17/Pressure_sensor_wiring.png)
+  ![Pressure_sensor_wiring](2/17/Pressure_sensor_wiring.png)
 - **Physical Design Illustration:** A graphical layout of the insole, displaying sensor positions, wiring paths, and connectivity to external components.
-![Physical_design](2/17/Physical_design.png)
+  ![Physical_design](2/17/Physical_design.png)
 - **External Sensor Box Design:** A blow-up view of the external sensor box with labeled buttons and ports.
-![Device_blow_up](2/17/Device_blow_up.png)
-
+  ![Device_blow_up](2/17/Device_blow_up.png)
 
 #### Equations:
 
@@ -195,9 +195,7 @@ Created GitHub to contain lab notebooks, PCB design files, Web application, and 
 ## Equations, Diagrams, and Figures:
 
 - Updated block diagrams now feature the microcontroller as part of the sensing subsystem and illustrate the new connections for the control buttons within the status subsystem.
-![block](2/19/block_diagram.png)
-
-
+  ![block](2/19/block_diagram.png)
 
 ## Conclusion:
 
@@ -246,18 +244,19 @@ During this session, I embarked on a comprehensive tutorial that spanned approxi
 
 Throughout the tutorial, I acquired valuable skills and knowledge in several key areas:
 
-
 ### figures
-- **Importing Footprints and Components:** schematic for the innital PCB
-![PCB_Schematic](2/29/PCB_Schematic.png)
+
+- **Importing Footprints and Components:** schematic for the initial PCB
+  ![PCB_Schematic](2/29/PCB_Schematic.png)
 - **Understanding and Implementing LDOs:** A significant portion of the tutorial was dedicated to Low Dropout Regulators (LDOs). I learned how LDOs are crucial for protecting the PCB by stabilizing voltage levels. Moreover, I gained insights into calculating thermal limits for LDOs, ensuring that the board operates within safe temperature ranges.
-![ldo](2/29/ldo.png)
+  ![ldo](2/29/ldo.png)
 
 ### resources
+
 - https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
 
-
 ### Equations:
+
 The equation used for calculating the thermal limit was:
 ΔT = Pdiss x Rθja
 where Pdiss is the power dissipation and RθJA is the junction-to-ambient thermal resistance.
@@ -282,9 +281,9 @@ However, we encountered significant challenges related to KiCad's library manage
 ## Diagrams and Figures:
 
 - Image: errors
-![errors](3/1/errors.png)
+  ![errors](3/1/errors.png)
 - Image: Update Footprint
-![footprint](3/1/footprint.png)
+  ![footprint](3/1/footprint.png)
 
 In the future, we will need to come up with a more permanent solution to migrating from device to device.
 
@@ -307,8 +306,7 @@ A significant portion of the session was also dedicated to a PCB design review s
 ## Diagrams and Figures:
 
 - Button Debouncing Circuit Diagram
-![button](3/4/button.png)
-
+  ![button](3/4/button.png)
 
 This session was pivotal in advancing our PCB design project, bringing us closer to a finalized schematic that meets both our functional requirements and the technical specifications outlined in our course. The insights from the PCB design review session were particularly helpful, underscoring the importance of power management and component selection in ensuring the reliability and longevity of our design. Future sessions will be dedicated to adjusting our power supply strategy and continuing to refine our schematic based on the feedback received.
 
@@ -330,8 +328,7 @@ The bulk of the session was consumed by the routing and placement of Surface-Mou
 ## Figures:
 
 - Figure: Completed Routing of PCB
-![pcb](3/5/pcb.png)
-
+  ![pcb](3/5/pcb.png)
 
 Through the design and debugging process, I have developed a solid understanding of basic CAD mechanics, which I anticipate applying to future projects.
 
@@ -356,9 +353,9 @@ To mitigate this issue, we decided to increase the diameter of the ground pads a
 ## Figures:
 
 - **Figure 1: DRC Violation Errors** - Highlighting the most common issue we encountered, the minimum angular width violation. This error was particularly challenging due to the small pin sizes of the components we selected, necessitating an increase in the diameter of the ground pads for resolution.
-![angw](3/6/angw.png)
+  ![angw](3/6/angw.png)
 - **Figure 2: Ground Pins for the ESP32 Chip** - Demonstrates the adjustments made to ground pad sizes to accommodate the ESP32 chip, ensuring proper fit and connectivity.
-![repaw](3/6/repaw.png)
+  ![repaw](3/6/repaw.png)
 
 This session was geared towards advancing our PCB design towards finalization. By addressing the DRC violation errors, specifically the challenging min angular width violation, we moved closer to ensuring that our design would be manufacturable and function as intended. In this session, we ended up reducing our total DRC violation errors from ~200 to 43 errors.
 
@@ -379,7 +376,7 @@ The bulk of the session was consumed by the reworking of our schematic to includ
 ## Figures:
 
 - Figure: Completed Routing of PCB
-![new_sch](3/18/new_sch.png)
+  ![new_sch](3/18/new_sch.png)
 
 Through the design and debugging process, I have developed a solid understanding of basic CAD mechanics, which I anticipate applying to future projects.
 
@@ -404,9 +401,9 @@ Upon finishing our DRC checks I took the lead in working to generate the Gerber 
 ## Figures:
 
 - **Figure 1: DRC Violation Errors** - Highlighting the most common issue we encountered, the minimum angular width violation. This error was particularly challenging due to the small pin sizes of the components we selected, necessitating an increase in the diameter of the ground pads for resolution.
-![angw](3/6/angw.png)
+  ![angw](3/6/angw.png)
 - **Figure 2: Ground Pins for the ESP32 Chip** - Demonstrates the adjustments made to ground pad sizes to accommodate the ESP32 chip, ensuring proper fit and connectivity.
-![repaw](3/6/repaw.png)
+  ![repaw](3/6/repaw.png)
 
 This session was geared towards advancing our PCB design towards finalization. By addressing the DRC violation errors, specifically the challenging min angular width violation, we moved closer to ensuring that our design would be manufacturable and function as intended. In this session, we ended up reducing our total DRC violation errors from ~200 to 43 errors.
 
@@ -704,21 +701,22 @@ Worked to adjust the 3D fusion model to account for the PCB and its ~2 millimete
 ### Objectives:
 
 - DAY
-  - make adjustments to cad since PCB now is a bit bigger due to connecting wire
-  - identify why SD card operations aren't working
+- make adjustments to cad since PCB now is a bit bigger due to connecting wire
+- identify why SD card operations aren't working
 - NIGHT
-  - work on PCB
-  - make esp 32 chip work
-  - debug circuit
-  - check connections
-  - program esp 32
-  - test all components
-  - test sd card
-  - test IMU
-  - test pressure
+- work on PCB
+- make esp 32 chip work
+- debug circuit
+- check connections
+- program esp 32
+- test all components
+- test sd card
+- test IMU
+- test pressure
 
 ### Work Session Record:
-Since we now routed a wire arround the PCB we had to reprint the model a bit bigger. I also adjusted it so that there would be space for a battery to in the top of the enclosure. Additionally I added moved down the wire hole so it didn't overlap with the PCB. I also redesigned the closing system to have a little less perciseness. I then started a resin print in seible. After we met up in lab to try and debug our PCB. 
+
+Since we now routed a wire around the PCB we had to reprint the model a bit bigger. I also adjusted it so that there would be space for a battery in the top of the enclosure. Additionally I moved down the wire hole so it didn't overlap with the PCB. I also redesigned the closing system to have a little less preciseness. I then started a resin print in siebel. After we met up in the lab to try and debug our PCB.
 
 ### Figures:
 
@@ -726,6 +724,7 @@ Since we now routed a wire arround the PCB we had to reprint the model a bit big
 ![component_markup](component_markup.jpeg)
 
 ### Resources:
+
 - https://electronics.stackexchange.com/questions/278852/sd-card-detect-in-spi-mode
 - https://forum.arduino.cc/t/how-can-i-connect-an-sd-card-to-arduino-directly/902446/15
 - https://goughlui.com/2014/01/03/project-read-collect-decode-sd-card-csd-register-data/
@@ -744,16 +743,17 @@ Since we now routed a wire arround the PCB we had to reprint the model a bit big
 
 ### Work Session Record:
 
-Found out that SD card pins weren't mappeed right which caused the problem where it wouldn't mount. This was caused as we mapped the pins for SPI protocol according to the pin mappings for an SD card. This should have been easy to fix as we could have changed these pin mappings in software. However since on of the main pins was connected to ground it would have been a lot more challegning. One approach we tried was to splice off a section of the ground plane connected to this ground pin and solder a wire from this large pad to the right place. However this was a little to delicate of a process for us as there were a bunch of wires all arrounf this plane which caused us to have to work a lot more carefully. As such we gave up on pursuing this endevor. If we were to do another PCB order we would deffinitly be able to have resolved this connection error on our PCB. I also helped Alyssa to try and fix the IMU by soldering on floating components to connect to the pins which were needed to be powered.Ultimatly this took too long and as such we had given up on this process as well. Something we did accomplish was the integration of the LED and the buttons which would show if bluetooth was working, if the sensors were recording and a combination. Some issues we had here was that there was a 100k ohm resisotr in serise with our LED which caused it to not turn on. We then soldered on a 1k ohm which allowed it to turn of but it was super dim. One change we didn't get to was to convert this 1k ohm to a 47k ohm allowing the LED to be a lot brighter. In terms of the button we had an issue where the button when pressed would discharge and then on the charging our capatitor resitor combination would have a supper high RC circuit charge time. This would cause our software to think the button was constantly pressed. We testeed this by console logging the values read by our annolog to digital pin reading the voltage of the button press. As such we replaced these compoented to have a much shorted RC. Finlly in this work session we created our final demo presentation slides which helped to guide our audiece during our demo. 
+Found out that SD card pins weren't mappeed right which caused the problem where it wouldn't mount. This was caused as we mapped the pins for SPI protocol according to the pin mappings for an SD card. This should have been easy to fix as we could have changed these pin mappings in software. However since one of the main pins was connected to ground it would have been a lot more challenging. One approach we tried was to splice off a section of the ground plane connected to this ground pin and solder a wire from this large pad to the right place. However this was a little too delicate of a process for us as there were a bunch of wires all around this plane which caused us to have to work a lot more carefully. As such we gave up on pursuing this endeavor. If we were to do another PCB order we would definitely be able to have resolved this connection error on our PCB. I also helped Alyssa to try and fix the IMU by soldering on floating components to connect to the pins which were needed to be powered.Ultimately this took too long and as such we had given up on this process as well. Something we did accomplish was the integration of the LED and the buttons which would show if bluetooth was working, if the sensors were recording and a combination. Some issues we had here was that there was a 100k ohm resistor in series with our LED which caused it to not turn on. We then soldered on a 1k ohm which allowed it to turn off but it was super dim. One change we didn't get to was to convert this 1k ohm to a 47k ohm allowing the LED to be a lot brighter. In terms of the button we had an issue where the button when pressed would discharge and then on the charging a capacitor resistor combination would have a supper high RC circuit charge time. This would cause our software to think the button was constantly pressed. We tested this by console logging the values read by our analog to digital pin reading the voltage of the button press. As such we replaced these components to have a much shorter RC. Finally in this work session we created our final demo presentation slides which helped to guide our audience during our demo.
 
 ### Figures:
+
 ![sd_card](sd_card.png)
 ![sd_card_map](sd_card_map.png)
 ![sd_card_fix](sd_card_fix.png)
 ![MPU6050](MPU6050.png)
 
-
 ### Resources:
+
 - https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
 
 ## Notebook Entry: April 24 2024
@@ -765,24 +765,28 @@ Found out that SD card pins weren't mappeed right which caused the problem where
 - move PCB to casing
 
 ### Work Session Record:
-We got the discharge figured out but it was still a bit finiky. As such we added a delay in software by about 5 seconds where we wouldn't read if the button was pressed so that we wouldn't get any false readings. We also worked to polish up the demo presentaion as I atteneded a peer review demo where the group was asked a bunch of hard questions like tempurature, power delivery, and to show the output of their power ciurcuit. As such we had to modify our presetaion to include these calculations and readings. However when we did go into the demo we never got asked this. I guess it was asked to try and allow the group that I watched to earn back points. We then did our demo in from of 2 TA's and 1 proffessor. This was fun to showcase what we had been working really hard on all semester. Overall I think it went really well as our demo went without hickup expept for our insole being a little bent causing the insole to have 1 sesor be perpetually high. 
+
+We got the discharge figured out but it was still a bit finicky. As such we added a delay in software by about 5 seconds where we wouldn't read if the button was pressed so that we wouldn't get any false readings. We also worked to polish up the demo presentation as I attended a peer review demo where the group was asked a bunch of hard questions like temperature, power delivery, and to show the output of their power circuit. As such we had to modify our presentation to include these calculations and readings. However when we did go into the demo we never got asked this. I guess it was asked to try and allow the group that I watched to earn back points. We then did our demo in front of 2 A's and 1 professor. This was fun to showcase what we had been working really hard on all semester. Overall I think it went really well as our demo went without hiccup except for our insole being a little bent causing the insole to have 1 sensor be perpetually high.
 
 ### equations
+
 Calculation for max ambient temperature our device can be in
-- TA(MAX) = 125°C – 80.3°C/W × (5 V – 3.3 V) × (0.25 A) = 90.87°C 
-- TA(MAX) = 125°C – 80.3°C/W × (5 V – 3.3 V) × (0.5 A) = 56.74°C 
+
+- TA(MAX) = 125°C – 80.3°C/W × (5 V – 3.3 V) × (0.25 A) = 90.87°C
+- TA(MAX) = 125°C – 80.3°C/W × (5 V – 3.3 V) × (0.5 A) = 56.74°C
 - TA(MAX) = 125°C – 80.3°C/W × (5 V – 3.3 V) × (0.6 A) = 43.09°C
 
 Calculation for max time on battery power with 2000 mAh battery as Gyro + SD not measured with PCB but with breadboard
+
 - Gyro: 1.73v over 1k ohm - .0017 A
 - SD : 0.159v over 1k ohm - 0.000159 A
 
 - **PCB Power Draw - 400mA → 2000mAh / 400mA = ~5 hours**
 
-
 ### Figures:
 
 ### Resources:
+
 - https://courses.engr.illinois.edu/ece445/wiki/#/esp32_example/index
 
 ## Notebook Entry: April 25 2024
@@ -792,7 +796,8 @@ Calculation for max time on battery power with 2000 mAh battery as Gyro + SD not
 - create mock demo presentation
 
 ### Work Session Record:
-We wanted to get feedback on a presentation for our final as we wanted to be as prepaired as possible. As such we created a mock presentaion where we showcased what we had done in a susince presentation. Slides we included were Overall, Recommendations for further work, What We Learned, SD Card Read PCB Error, MPU PCB Error, PCB Capabilities/Errors, Ethics, Max Time On Battery Power, Max Ambient Temperature, Wearable/Modular Design, Web Interface, Insole design, Block Diagram, High Level Requirements, and Background.
+
+We wanted to get feedback on a presentation for our final as we wanted to be as prepared as possible. As such we created a mock presentation where we showcased what we had done in a susince presentation. Slides we included were Overall, Recommendations for further work, What We Learned, SD Card Read PCB Error, MPU PCB Error, PCB Capabilities/Errors, Ethics, Max Time On Battery Power, Max Ambient Temperature, Wearable/Modular Design, Web Interface, Insole design, Block Diagram, High Level Requirements, and Background.
 
 ### Figures:
 
@@ -802,14 +807,15 @@ We wanted to get feedback on a presentation for our final as we wanted to be as 
 
 ### Objectives:
 
-- Do mock presentaion
-- Get feedback on mock presentaion
+- Do mock presentation
+- Get feedback on mock presentation
 
 ### Work Session Record:
- We went though our mock presentation where we showcased what we had done in presentaion form. Some feedback we got was that we needed a demo, to focus on positioning, reduce wordyness of slides, and focus on removing filler words. 
 
+We went through our mock presentation where we showcased what we had done in presentation form. Some feedback we got was that we needed a demo, to focus on positioning, reduce wordiness of slides, and focus on removing filler words.
 
 ### Figures:
+
 ![feeback](feedback.png)
 
 ### Resources:
@@ -824,11 +830,13 @@ We wanted to get feedback on a presentation for our final as we wanted to be as 
 - add images to final paper
 
 ### Work Session Record:
-Created the final demo presntiation and made the following adjustments to our mock presentation:
+
+Created the final demo presentation and made the following adjustments to our mock presentation:
+
 - less words on ethic slide
 - switched to ECE template like dictated in assignment details
-- Added demo video slide 
-- split up real time and upload slides for web interface 
+- Added demo video slide
+- split up real time and upload slides for web interface
 - added design changes slides
 
 ### Figures:
