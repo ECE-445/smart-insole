@@ -1,12 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Plotly from "plotly.js-dist";
+import { Link } from "react-router-dom";
+import { updateElevationGraph, updatePaceGraph } from "../helpers/graphUtils.js";
+import { ShoeOutline } from "../components/ShoeOutline";
+
+
 
 export const Bluetooth = () => {
   const [recivedVal, setRecivedVal] = useState("");
-  const [temp, setTemp] = useState("");
+  const [temp, setTemp] = useState("Disconnected");
   const [time, setTime] = useState("");
+  const [ShoeData, setShoeData] = useState(Array(10).fill(0));
+  const [isConnected, setIsConnected] = useState(false);
 
 
+
+  const handleToggleCircle = (index) => {
+    setShoeData((prevData) => {
+      const newData = [...prevData];
+      newData[index] = (newData[index] + 1) % 2; // Toggle between 0 and 1
+      return newData;
+    });
+  };
+
+  /*
   useEffect(() => {
     const graph = document.getElementById("graph");
 
@@ -24,6 +41,16 @@ export const Bluetooth = () => {
 
     return () => Plotly.purge(graph);
   }, []);
+  */
+  useEffect(() => {
+    // Update temp text based on isConnected value
+    if (isConnected) {
+      setTemp("Connected");
+    } else {
+      setTemp("Disconnected");
+    }
+  }, [isConnected]);
+
 
   useEffect(() => {
     const graph = document.getElementById("graph");
@@ -37,18 +64,76 @@ export const Bluetooth = () => {
   
   }, [recivedVal, time]);
 
+  useEffect(() => {
+    const data = recivedVal.split(',');
+  
+    const psens_values = Array(10).fill(0);
+
+    psens_values[0] = parseFloat(data[0]);
+    psens_values[1] = parseFloat(data[2]);
+    psens_values[2] = parseFloat(data[2]);
+    psens_values[3] = parseFloat(data[3]);
+    psens_values[5] = parseFloat(data[4]);
+    psens_values[4] = parseFloat(data[5]);
+    psens_values[6] = parseFloat(data[6]);
+    psens_values[7] = parseFloat(data[7]);
+    psens_values[9] = parseFloat(data[8]);
+    psens_values[8] = parseFloat(data[9])
+  
+    const x = parseFloat(data[10]);
+    const y = parseFloat(data[11]);
+    const z = parseFloat(data[12]);
+  
+    const accelerometerData = { x, y, z };
+    updateElevationGraph(accelerometerData);
+    updatePaceGraph(accelerometerData);
+  
+
+    setShoeData(prevShoeData => {    
+      const categories = psens_values.map(value => {
+          if (value > 4000) {
+            return 0;
+          } else if (value <= 4000 && value >= 2500) {
+            return 1;
+          } else if (value < 2500 && value >= 1000) {
+            return 2;
+          } else {
+            return 3;
+          }
+        }); 
+      return [...prevShoeData.slice(0, -10), ...categories];
+    });
+    
+  }, [recivedVal]);
+
   const connectButton = () => {
     if (isWebBluetoothEnabled()) {
       connectToDevice();
+      setIsConnected(true);
     }
   }
 
-  const onButton = () => {
-    writeOnCharacteristic(1);
-  }
+  const handleCharacteristicListener = (shouldSubscribe) => {
+    if (sensorCharacteristicFound) {
+      if (shouldSubscribe) {
+        sensorCharacteristicFound.addEventListener(
+          "characteristicvaluechanged",
+          handleCharacteristicChange
+        );
+        sensorCharacteristicFound.startNotifications();
+        console.log("Notifications Started.");
+      } else {
+        sensorCharacteristicFound.removeEventListener(
+          "characteristicvaluechanged",
+          handleCharacteristicChange
+        );
+        sensorCharacteristicFound.stopNotifications();
+      }
+    }
+  };
 
-  const offButton = () => {
-    writeOnCharacteristic(0);
+  const disconnectButton = () => {
+    window.location.reload();
   }
 
   function isWebBluetoothEnabled() {
@@ -87,19 +172,15 @@ export const Bluetooth = () => {
       .then((characteristic) => {
         console.log("Characteristic discovered:", characteristic.uuid);
         sensorCharacteristicFound = characteristic;
-        characteristic.addEventListener(
-          "characteristicvaluechanged",
-          handleCharacteristicChange
-        );
-        characteristic.startNotifications();
-        console.log("Notifications Started.");
+        handleCharacteristicListener(true); // Subscribe to characteristic updates
+        setIsConnected(true);
         return characteristic.readValue();
       })
       .then((value) => {
         console.log("Read value: ", value);
         const decodedValue = new TextDecoder().decode(value);
         console.log("Decoded value: ", decodedValue);
-        setRecivedVal(decodedValue);
+        setRecivedVal(decodedValue); 
       })
       .catch((error) => {
         console.log("Error: ", error);
@@ -113,14 +194,15 @@ export const Bluetooth = () => {
   }
 
   function handleCharacteristicChange(event) {
-    const newValueReceived = new TextDecoder().decode(event.target.value);
-    console.log("Characteristic value changed: ", newValueReceived);
-    setRecivedVal(newValueReceived);
-    setTime(getDateTime());
+      const newValueReceived = new TextDecoder().decode(event.target.value);
+      console.log("Characteristic value changed: ", newValueReceived);
+      setRecivedVal(newValueReceived);
+      setTime(getDateTime());
+    
   }
 
   function writeOnCharacteristic(value) {
-    if (bleServer && bleServer.connected) {
+    if (bleServer?.connected) {
       bleServiceFound
         .getCharacteristic(ledCharacteristic)
         .then((characteristic) => {
@@ -130,6 +212,9 @@ export const Bluetooth = () => {
         })
         .then(() => {
           console.log("Value written to LED characteristic:", value);
+          if (value === 2) {
+            setIsConnected(false); // Update connection state to disconnected
+          }
         })
         .catch((error) => {
           console.error("Error writing to the LED characteristic: ", error);
@@ -143,32 +228,36 @@ export const Bluetooth = () => {
       );
     }
   }
+  
 
   function disconnectDevice() {
     console.log("Disconnect Device.");
     if (bleServer && bleServer.connected) {
       if (sensorCharacteristicFound) {
-        sensorCharacteristicFound
-          .stopNotifications()
-          .then(() => {
-            console.log("Notifications Stopped");
-            return bleServer.disconnect();
-          })
-          .then(() => {
-            console.log("Device Disconnected");
-            setTemp("Device Disconnected");
-          })
-          .catch((error) => {
-            console.log("An error occurred:", error);
-          });
-      } else {
-        console.log("No characteristic found to disconnect.");
+        sensorCharacteristicFound.removeEventListener(
+          "characteristicvaluechanged",
+          handleCharacteristicChange
+        );
+        sensorCharacteristicFound.stopNotifications();
       }
+      bleServer.disconnect()
+        .then(() => {
+          console.log("Device Disconnected");
+          setTemp("Device Disconnected");
+          setIsConnected(false); // Update connection state to disconnected
+          bleServer = null; // Reset the server instance
+          bleServiceFound = null; // Reset the service instance
+          sensorCharacteristicFound = null; // Reset the characteristic instance
+        })
+        .catch((error) => {
+          console.error("An error occurred during disconnection:", error);
+        });
     } else {
       console.error("Bluetooth is not connected.");
       window.alert("Bluetooth is not connected.");
     }
   }
+  
 
   function getDateTime() {
     var currentdate = new Date();
@@ -212,6 +301,7 @@ export const Bluetooth = () => {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
         justifyContent: "center",
       }}
     >
@@ -219,25 +309,24 @@ export const Bluetooth = () => {
       <button onClick={connectButton} id="connectBleButton">
         Connect to BLE Device
       </button>
-      <button onClick={disconnectDevice}>Disconnect BLE Device</button>
+      <button onClick={disconnectButton}>Disconnect BLE Device</button>
       <p>
         BLE state:{" "}
         <strong>
-          <span style={{ color: "#d13a30" }}>Disconnected {temp}</span>
+        <span style={{ color: isConnected ? "green" : "red" }}>{temp}</span>
         </strong>
       </p>
-      <div id="graph" style={{ width: "80%", margin: "auto" }}></div>
+      <ShoeOutline circleValues={ShoeData} handleToggleCircle={handleToggleCircle}/>
+      <h3>Live View of Foot Pressure Distribution</h3>
+      <div id="graph" style={{ width: "70%", margin: "auto", border: "7px solid #ff0000", borderRadius: "5px" }}></div>
+      <div id="pace-graph" style={{ width: "70%", margin: "auto", border: "7px solid #ff1493", borderRadius: "5px", marginTop: "20px"}}></div>
       <h2>Fetched Value</h2>
       <p>{recivedVal}</p>
       <p>Last reading: {time}</p>
-      <h2>Control GPIO 2</h2>
-      <button onClick={onButton} id="onButton">
-        ON
-      </button>
-      <button onClick={offButton} id="offButton">
-        OFF
-      </button>
-      <p>Last value sent: {recivedVal}</p>
+
+      <Link to="/">
+        <button>Home Page</button>
+      </Link>
     </div>
   );
 };

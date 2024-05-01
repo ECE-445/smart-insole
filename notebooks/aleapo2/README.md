@@ -4,6 +4,12 @@
 - [Week of 2/25 - 3/3](#week-of-225---33)
 - [Week of 3/3 - 3/9](#week-of-33---39)
 - [Week of 3/17 - 3/25](#week-of-317---325)
+- [Week of 3/25 - 3/31](#week-of-325---331)
+- [Week of 4/1 - 4/7](#week-of-41---47)
+- [Week of 4/7 - 4/15](#week-of-47---415)
+- [Week of 4/15 - 4/22](#week-of-415---422)
+- [Summary](#summary)
+
 
 
 ## Week of 2/19 - 2/25
@@ -83,3 +89,38 @@ MPU6050 Accelerometer/Gyroscope:
 - It took a while to achieve I2C communication between the ESP32 and Accelerometer/Gyroscope and there were two main issues: the power supplied to the MPU was inconsistent as indicated by the green light flickering so I went to the lab and soldered the pins to the board. Then I needed to adjust the pins for the I2C communication, specifically using GPIO8 for SDA and GPIO9 for SCL. 
 - Then I got communication working between the MPU and the ESP32 using the Web BLE.
 - I updated the web application code to accept the accelerometer measurements properly and integrated a graph that plots the accelerometer measurements in real time.
+
+## Week of 4/7 - 4/15
+
+Meeting w TA:
+- Showed him the website and got the USB-UART Bridge C, and updated the schematic so that our PCB for the final round can go through properly
+
+Pressure Sensor:
+Worked with Alyssa to integrate our sample velostat pressure sensor with the breadboard code. It was a straightforward process of soldering the wires that connected to the copper tape to a longer wire that can be plugged into the breadboard, and then putting that wire in series with a resistor. We ran into an issue of where the the pressure sensor would too sensitive to the slightest touch, and we fixed this by using a smaller resistor size to induce the current -- using a roughly 47 ohm resistor. This was an iterative process as the voltage drop across the resistor is mapped from 0 to 4095 on the ADC channel GPIO pins on the microcontroller, and depending on the value of the resistor I used, it would go from 0 to 4095 almost immediately. I discovered that going with essentially the lowest resistance allowed for the most "variability" of the pressure. Variabiltiy in this sense is defined as exerting different amounts of pressure actually result in different voltage drops as measured by the channel, i.e. light pressure corresponds to 1000, medium pressure to 2500, and intense to 4095. Got it fully working with one pressure sensor.
+
+## Week of 4/15 - 4/22
+SD Card:
+Integrated the SD card with the breadboard. This made use of the SPI communication protocol and made sure the pins would be configurable. I verified it worked by opening a directory and writing to a file and then manually checking the file on my laptop. A SS of my very initial test code is shown here:
+![SD_CARD_CODE](image.png)
+
+Working with the Insole:
+Extended the code and the setup to work with all ten sensors worked and had variable outputs based on the pressure exerted. Picture is included here of all ten sensors.
+![P_SENS_10](image-1.png)
+I also made sure that all ten pressure sensors could get the data and will send it over Bluetooth with low latency. Ramsey mentioned there may be issue with using bluetooth and all ten GPIO pins but I never ran into that issue.
+
+Web App: I made a lot of updates to the web app where I simplified it to consist of two main modes, being the real time mode that we are used to, and also make a FileUpload page that allowed people to choose .txt files that return the average gyroscope, acceleration and temperature from the measurements. I also completely remade the heatmap with my own heatmap with its own sectioned off rectangles that serve as the areas that heat up. I will include a picture of both the new heatmap and the updated FileUpload page below. I added a graph that allows you to see the elevation gain that occurs over the course of the hike. It is a basic acceleration integration with respect tot eh polling time of the sensor. Obviously since sensor measurements are extremely noisy I smoothed out the data using a windowed average of ten sequential measurements. This gave me relatively stable data. 
+![HEAT_MAP](image-2.png)
+
+![FileUpload](image-3.png)
+
+Buttons/LED: I also implemented some additional functionality to satisfy the Status Subsystem with this. This consisted of a button that performed the "Start Hike" function of beginning the recording of the data to the SD card. There was also two LEDs that I implemented into the microcontroller code. One of them was an LED that indicated whether a bluetooth connection existed or not, and the other which indicated where the hike was started or not. This was to give easy to see feedback to the user and was vital to our privacy component. This code was used on both the breadboard and the microcontroller component.
+
+
+Two main issues with the MPU6050 and the SD card reader for the PCB that we discovered:
+    - SD card was designed with connections for SD card not microSD card in mind. So our connections are wrong but we know exactly how to fix it. the only reason why we cant just reconfigure the pins is because what should be MISO is currently set to ground. Since it is set to ground I can not just reconfigure the pins in software. 
+    - MPU6050 needed extra resistors and capacitors in the SDA/SCL,VCC pins to make it work
+
+## Summary
+This was a great learning experience of a project. I wrote all the microcontroller code (both breadboard and PCB) that utilized a BLE connection, the MPU accelerometer/gyroscope interfacing, and the SD card reader, giving me experience working with I2C and SPI. I also wrote all the web app code which gave me some experience working with the REACT framework and creating a polished web app that responds in real time to new data. I also got to experiment with some of the PCB design process and messed around with sensor configuration specifically with the pressure sensors. I learned a great deal completing this project and am grateful to my team members and TAs who helped me along the way!
+
+
