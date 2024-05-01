@@ -19,7 +19,7 @@ function min(data, value) {
 const bins = (d) => d.bins;
 const count = (d) => d.count;
 
-const defaultMargin = { top: 0, left: 10, right: 10, bottom: 10 };
+const defaultMargin = { top: 0, left: 0, right: 0, bottom: 0 };
 
 function BasicHeatMap({
   width,
@@ -27,7 +27,7 @@ function BasicHeatMap({
   data,
   events = false,
   margin = defaultMargin,
-  separation = 20
+  separation = 0
 }) {
   const binData = data || [];
 
@@ -69,11 +69,12 @@ function BasicHeatMap({
   yScale.range([yMax, 0]);
 
   // Adjusted height to accommodate the heatmap properly
-  const adjustedHeight = yMax + margin.top + margin.bottom;
+  const adjustedHeight = yMax + margin.top + margin.bottom + 20;
 
   return (
+    <div style = {{alignItems: "center"}}>
     <svg width={width} height={adjustedHeight}>
-      <rect x={margin.left} y={margin.top+margin.bottom} width={xMax} height={yMax} fill={background} rx={14} />
+      <rect x={margin.left} y={margin.top + margin.bottom + 10} width={xMax} height={yMax} fill={background} rx={0} />
       <Group top={margin.top} left={margin.left}>
         <HeatmapCircle
           data={binData}
@@ -107,6 +108,7 @@ function BasicHeatMap({
         </HeatmapCircle>
       </Group>
     </svg>
+    </div>
   );
 }
 
